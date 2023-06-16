@@ -7,18 +7,26 @@ module.exports = {
   ],
   mode: "jit",
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       fontFamily: {
         dana: ["var(--default-font)"],
-       
       },
       colors: {
-        "secondary-orange": "#f79761",
-        "light-white": {
-          DEFAULT: "rgba(59,60,152,0.03)",
-          100: "rgba(59,60,152,0.02)",
+        primary: {
+          DEFAULT: "#262C9C",
         },
-        grey: "#747A88",
+        gray: {
+          600: "#596066",
+          800: "#383F45",
+        },
+
+        basketGreen:"#2F9461"
+      },
+      fontSize: {
+        14: "14px",
       },
       backgroundImage: {
         pattern: "url('/pattern.png')",

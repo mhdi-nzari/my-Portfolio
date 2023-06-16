@@ -8,22 +8,43 @@ export const footerLinks = [
       { title: "Bussiness Relation", url: "/" },
     ],
   },
+];
+
+export const navBarItem = [
   {
-    title: "Company",
-    links: [
-      { title: "Events", url: "/" },
-      { title: "Blog", url: "/" },
-      { title: "Podcast", url: "/" },
-      { title: "Invite a friend", url: "/" },
-    ],
+    title: "درباره من",
+    url: "/aboutMe",
+    icon: "/images/icon/aboutMe_ico.svg",
   },
   {
-    title: "Socials",
-    links: [
-      { title: "Discord", url: "/" },
-      { title: "Instagram", url: "/" },
-      { title: "Twitter", url: "/" },
-      { title: "Facebook", url: "/" },
-    ],
+    title: "فروشگاه",
+    url: "/shop",
+    icon: "/images/icon/shop_ico.svg",
+  },
+  {
+    title: "بلاگ",
+    url: "/blog",
+    icon: "/images/icon/blog_ico.svg",
+  },
+  {
+    title: "پادکست",
+    url: "/podcast",
+    icon: "/images/icon/podcast_ico.svg",
+  },
+  {
+    title: "سوالات متداول",
+    url: "/faq",
+    icon: "/images/icon/faq_ico.svg",
+  },
+
+  {
+    title: "تماس با من",
+    url: "/contactUs",
+    icon: "/images/icon/contactUs_ico.svg",
+  },
+  {
+    title: "سبد خرید",
+    url: "/cart",
+    icon: "/images/icon/basket_ico.svg",
   },
 ];
