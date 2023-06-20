@@ -63,7 +63,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <body
-        className={`relative oveflow-hidden max-w-screen-2xl ${dana.variable} font-dana`}
+        className={`relative mx-auto oveflow-hidden max-w-screen-2xl ${dana.variable} font-dana`}
       >
         <Navbar />
         {children}

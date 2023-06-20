@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <header className="w-full z-40 container relative ">
-      <nav className="flex items-center justify-between py-7 px-6 sm:px-16 gap-x-5">
+      <nav className="flex items-center justify-between py-7 gap-x-5">
         <Link href={"/"}>
           <Image
             alt="logo"
@@ -23,16 +23,16 @@ const Navbar = () => {
           />
         </Link>
 
-        <div className="flex gap-3 items-center justify-center">
+        <div className="flex gap-5 items-center justify-center ">
           <CustomButton
             btnType="button"
-            containerStyles="burger bg-primary hover:bg-transparent  group border border-primary"
-            textStyles="text-white text-14 font-light group-hover:text-gray-600"
+            containerStyles="burger bg-primary hover:bg-transparent !px-3"
+            textStyles="text-white font-light !text-12 sm:text-14 "
             title="ثبت نام | ورود"
           />
           <button
             type="button"
-            className="flex flex-col justify-center gap-1 w-8 h-8 "
+            className="flex flex-col justify-center lg:hidden gap-1 w-8 h-8 "
             onClick={() => {
               setActiveMenu((prevActiveMenu) => !prevActiveMenu);
               setMenuClicked(true);

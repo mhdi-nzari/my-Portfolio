@@ -100,7 +100,6 @@
 
 
 body {
-  background-color: white;
   font-family: var(--default-font),
   system-ui,
   -apple-system,
@@ -125,7 +124,6 @@ body {
   justify-content: center;
   padding: 14px 19px;
   @apply rounded-full;
-  max-width: 234px;
 }
 
 button,
