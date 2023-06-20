@@ -12,3 +12,10 @@ export interface customButtonProps {
 }
 
 
+export interface activeMenyProps {
+  activeMenu: boolean;
+  setActiveMenu: any;
+  menuClicked: boolean;
+  setMenuClicked: any;
+}
+

@@ -4,8 +4,12 @@ import Link from "next/link";
 import React, { useState } from "react";
 import CustomButton from "./CustomButton";
 import MobileMenu from "./MobileMenu";
+
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(false);
+  const [menuClicked, setMenuClicked] = useState(false);
+
+
   return (
     <header className="w-full z-40 container relative ">
       <nav className="flex items-center justify-between py-7 px-6 sm:px-16 gap-x-5">
@@ -22,14 +26,17 @@ const Navbar = () => {
         <div className="flex gap-3 items-center justify-center">
           <CustomButton
             btnType="button"
-            containerStyles="bg-primary hover:bg-transparent  group border border-primary"
+            containerStyles="burger bg-primary hover:bg-transparent  group border border-primary"
             textStyles="text-white text-14 font-light group-hover:text-gray-600"
             title="ثبت نام | ورود"
           />
           <button
             type="button"
             className="flex flex-col justify-center gap-1 w-8 h-8 "
-            onClick={() => setActiveMenu(!activeMenu)}
+            onClick={() => {
+              setActiveMenu((prevActiveMenu) => !prevActiveMenu);
+              setMenuClicked(true);
+            }}
           >
             <span
               className={`w-full h-0.5 bg-gray-800 rounded-full transition-default duration-500 ${
@@ -58,7 +65,7 @@ const Navbar = () => {
           </button>
         </div>
       </nav>
-      <MobileMenu />
+      <MobileMenu activeMenu={activeMenu} setActiveMenu={setActiveMenu} menuClicked={menuClicked} setMenuClicked={setMenuClicked}  />
     </header>
   );
 };
