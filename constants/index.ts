@@ -1,6 +1,3 @@
-
-
-
 export const footerLinks = [
   {
     title: "About",
@@ -19,13 +16,12 @@ export const navBarItem = {
       title: "درباره من",
       url: "/aboutMe",
       icon: "/images/icon/aboutMe_ico.svg",
-      id:0
+      id: 0,
     },
     {
       title: "فروشگاه",
       url: "/shop",
       icon: "/images/icon/shop_ico.svg",
-      
     },
     {
       title: "بلاگ",
@@ -58,3 +54,35 @@ export const navBarItem = {
     },
   ],
 };
+
+export const achievementItem = [
+  {
+    title: "مقاله تخصصی",
+    number: 80,
+    titleOfNumber: "",
+    icon: "/images/icon/Expertise_article.svg",
+    colorIcon: "#262C9C",
+  },
+  {
+    title: "پادکست برنامه نویسی",
+    number: 4000,
+    titleOfNumber: "دقیقه",
+    icon: "/images/icon/development_podcast.svg",
+    colorIcon: "#7E1AE5",
+  },
+  {
+    title: "مشاوره تخصصی برنامه نویسی",
+    number: 1000,
+    titleOfNumber: "دقیقه",
+    icon: "/images/icon/expertise_consultant.svg",
+    colorIcon: "#F0463C",
+  },
+
+  {
+    title: "دوره آموزشی پروژه محور",
+    number: 5,
+    titleOfNumber: "",
+    icon: "/images/icon/graduation_course.svg",
+    colorIcon: "#F1891E",
+  },
+];

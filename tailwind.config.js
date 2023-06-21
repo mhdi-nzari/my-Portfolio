@@ -64,6 +64,7 @@ module.exports = {
       backgroundImage: {
         pattern: "url('/pattern.png')",
         hero: "url('/images/hero.png')",
+        offer: "url('/images/offer_bg.png')",
       },
     },
   },

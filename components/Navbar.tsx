@@ -27,7 +27,7 @@ const Navbar = () => {
           <CustomButton
             btnType="button"
             containerStyles="burger bg-primary hover:bg-transparent !px-3"
-            textStyles="text-white font-light !text-12 sm:text-14 "
+            textStyles="text-white font-light !text-12 sm:text-sm "
             title="ثبت نام | ورود"
           />
           <button

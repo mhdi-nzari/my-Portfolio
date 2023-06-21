@@ -4,10 +4,10 @@ import CustomButton from "../CustomButton";
 
 const Hero = () => {
   return (
-    <section className="container w-full bg-hero bg-right bg-repeat-x">
+    <section className="container bg-hero bg-right bg-repeat-x">
       <div className="w-full flex flex-col lg:flex-row gap-5 sm:gap-7 md:gap-12 justify-center items-center">
-        <div className="flex  md:w-7/12 flex-col py-6 justify-center items-center lg:items-start">
-          <p className="text-grey-600 text-20 sm:text-28 font-normal text-center flex ">
+        <div className="flex  md:w-7/12 flex-col justify-center items-center lg:items-start">
+          <p className="text-grey-600 text-20 sm:text-xl font-normal text-center flex ">
             سلام
             <span className="px-1 flex items-center justify-center">
               <Image
@@ -20,7 +20,7 @@ const Hero = () => {
             <span className="text-primary font-black"> مهدی نظری</span> هستم!
           </p>
           <div className="mt-2 w-[220px] sm:w-fit h-[38px] sm:h-fit bg-grey-900 rounded-full flex justify-center items-center px-4 py-2">
-            <p className="text-14 sm:text-20 text-white font-light">
+            <p className="text-sm sm:text-20 text-white font-light">
               Junior
               <span className="pl-1 text-secondary font-medium">
                 Front End Developer
@@ -46,7 +46,7 @@ const Hero = () => {
               <span className="absolute -right-2 -bottom-2 border-2 border-secondary w-4 h-4 bg-white"></span>
             </div>
 
-            <p className="pt-7  text-grey-500 font-medium  text-14 sm:text-18 text-center lg:text-right">
+            <p className="pt-7  text-grey-500 font-medium  text-sm sm:text-18 text-center lg:text-right">
               گاهی اوقات
               <span className="inline-flex text-primary font-semibold px-0.5">
                 رابط کاربری
@@ -102,7 +102,7 @@ const Hero = () => {
             </div>
             <div className="hidden lg:block">
               <svg
-              className="w-32 h-32 lg:w-auto lg:h-auto"
+                className="w-32 h-32 lg:w-auto lg:h-auto"
                 width="196"
                 height="75"
                 viewBox="0 0 196 75"

@@ -130,3 +130,7 @@ button,
 a {
   @apply transition-all duration-200 ease-linear
 }
+
+section {
+  @apply  w-full py-6
+}
