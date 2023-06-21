@@ -1,6 +1,7 @@
 import { Achievement, Hero, Offer } from "@/components";
 import Head from "next/head";
 
+
 export default function Home() {
   return (
     <>

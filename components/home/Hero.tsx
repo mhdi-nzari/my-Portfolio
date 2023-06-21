@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="container bg-hero bg-right bg-repeat-x">
       <div className="w-full flex flex-col lg:flex-row gap-5 sm:gap-7 md:gap-12 justify-center items-center">
-        <div className="flex  md:w-7/12 flex-col justify-center items-center lg:items-start">
+        <div className="flex  md:w-7/12 flex-col justify-center items-center lg:items-start max-w-md lg:max-w-full">
           <p className="text-grey-600 text-20 sm:text-xl font-normal text-center flex ">
             سلام
             <span className="px-1 flex items-center justify-center">

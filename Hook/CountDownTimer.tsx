@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import styled from "styled-components";
 
 const CountDownTimer = () => {
   const [partyTime, setPartyTime] = useState(false);
@@ -36,66 +37,104 @@ const CountDownTimer = () => {
 
     return () => clearInterval(interval);
   }, []);
+
+  const Title = styled.h1`
+    font-size: 1.5em;
+    text-align: center;
+    color: #bf4f74;
+  `;
+
   return (
-    <div className="flex w-full justify-between">
+    <div className="flex w-full justify-center gap-5">
       {/* seconds */}
       <div className="flex  flex-col items-center gap-2">
-        <div className="mb-2 flex justify-center items-center" style={{ borderRadius: "12px" , backgroundColor:"rgba(46, 29, 114, 0.65)" , width:"44px" , height:"44px" }}>
+        <div
+          className="mb-2 flex items-center justify-center"
+          style={{
+            borderRadius: "12px",
+            backgroundColor: "rgba(46, 29, 114, 0.65)",
+            width: "44px",
+            height: "44px",
+          }}
+        >
           <p
-            className="text-2xl font-bold text-white flex justify-center items-center"
+            className="flex items-center justify-center text-2xl font-bold text-white"
             style={{ padding: "10px 14px" }}
           >
             {seconds}
           </p>
         </div>
-        <p className="w-fit text-18 mt-2 font-normal text-white">ثانیه</p>
+
+        <p className="mt-2 w-fit text-18 font-normal text-white">ثانیه</p>
       </div>
 
       {/* dot */}
-      <div className="mx-2 flex items-center justify-center text-white">:</div>
+      {/* <div className="flex items-start justify-center px-2 text-white">:</div> */}
 
       <div className="flex  flex-col items-center gap-2">
-        <div className="mb-2" style={{ borderRadius: "12px" , backgroundColor:"rgba(46, 29, 114, 0.65)" , width:"44px" , height:"44px" }}>
+        <div
+          className="mb-2"
+          style={{
+            borderRadius: "12px",
+            backgroundColor: "rgba(46, 29, 114, 0.65)",
+            width: "44px",
+            height: "44px",
+          }}
+        >
           <p
-            className="text-2xl font-bold text-white flex justify-center items-center"
+            className="flex items-center justify-center text-2xl font-bold text-white"
             style={{ padding: "10px 14px" }}
           >
             {minutes}
           </p>
         </div>
-        <p className="w-fit text-18 mt-2 font-normal text-white">دقیقه</p>
+        <p className="mt-2 w-fit text-18 font-normal text-white">دقیقه</p>
       </div>
 
       {/* dot */}
-      <div className="mx-2 flex items-center justify-center text-white">:</div>
-
-      {/* dot */}
+      {/* <div className="flex items-start justify-center px-2 text-white">:</div> */}
 
       <div className="flex  flex-col items-center gap-2">
-        <div className="mb-2" style={{ borderRadius: "12px" , backgroundColor:"rgba(46, 29, 114, 0.65)" , width:"44px" , height:"44px" }}>
+        <div
+          className="mb-2"
+          style={{
+            borderRadius: "12px",
+            backgroundColor: "rgba(46, 29, 114, 0.65)",
+            width: "44px",
+            height: "44px",
+          }}
+        >
           <p
-            className="text-2xl font-bold text-white flex justify-center items-center"
+            className="flex items-center justify-center text-2xl font-bold text-white"
             style={{ padding: "10px 14px" }}
           >
             {hours}
           </p>
         </div>
-        <p className="w-fit text-18 mt-2 font-normal text-white">ساعت</p>
+        <p className="mt-2 w-fit text-18 font-normal text-white">ساعت</p>
       </div>
 
-      <div className="mx-2 flex items-center justify-center text-white">:</div>
+      {/* <div className="flex items-start justify-center px-2 text-white">:</div> */}
 
       {/* hours */}
       <div className="flex  flex-col items-center">
-        <div className="mb-2" style={{ borderRadius: "12px" , backgroundColor:"rgba(46, 29, 114, 0.65)" , width:"44px" , height:"44px" }}>
+        <div
+          className="mb-2"
+          style={{
+            borderRadius: "12px",
+            backgroundColor: "rgba(46, 29, 114, 0.65)",
+            width: "44px",
+            height: "44px",
+          }}
+        >
           <p
-            className="text-2xl font-bold text-white flex justify-center items-center"
+            className="flex items-center justify-center text-2xl font-bold text-white"
             style={{ padding: "10px 14px" }}
           >
             {days}
           </p>
         </div>
-        <p className="w-fit text-18 mt-2 font-normal text-white">روز</p>
+        <p className="mt-2 w-fit text-18 font-normal text-white">روز</p>
       </div>
     </div>
   );

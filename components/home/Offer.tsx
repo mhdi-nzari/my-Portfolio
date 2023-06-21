@@ -5,8 +5,8 @@ import Image from "next/image";
 const Offer = () => {
   return (
     <section className="container">
-      <div className="relative flex w-full flex-col items-center rounded-xl bg-offer bg-center bg-no-repeat p-5 pt-14 ">
-        <p className="pb-4 text-center text-base font-[990] text-white sm:text-2xl pt-3">
+      <div className="lg:max-w-ful relative mx-auto flex w-full max-w-md flex-col items-center rounded-xl bg-offer bg-cover  bg-center  bg-no-repeat p-5 pt-14 ">
+        <p className="pb-4 pt-3 text-center text-base font-[990] text-white sm:text-2xl">
           تخفیف ویژه دوره آموزش برنامه نویسی
         </p>
 
@@ -20,16 +20,15 @@ const Offer = () => {
             btnType={"button"}
             containerStyles={"bg-secondary mx-auto !px-[17px] py-[16px]"}
           />
-    
         </div>
 
         {/*  image element */}
         <div className="absolute -right-0 -top-12">
           <Image
-            height="157"
+            height="176"
             width="175"
-            className=" h-[105px] w-[86px] md:h-[175px] md:w-[160px]"
-            src="/images/offer_element.svg"
+            className=" h-[105px] w-[86px] lg:h-[176px] lg:w-[175px]"
+            src="/images/offer_element.png"
             alt=""
           />
         </div>
