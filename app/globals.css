@@ -5,15 +5,51 @@
 
 
 
+/* ---------------- Popins Fonts ---------------- */
 
+@font-face {
+  font-family: popinsLight;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Poppins"), url('/font/popins/Poppins-Regular.ttf') format('truetype')
+}
+@font-face {
+  font-family: popinsMedium;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: local("Poppins"), url('/font/popins/Poppins-Medium.ttf') format('truetype')
+}
+@font-face {
+  font-family: poppinsSemiBold;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: local("Poppins"), url('/font/popins/Poppins-SemiBold.ttf') format('truetype')
+}
+@font-face {
+  font-family: poppinsBold;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: local("Poppins"), url('/font/popins/Poppins-Bold.ttf') format('truetype')
+}
 
+@font-face {
+  font-family: poppinsBold;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src: local("Poppins"), url('/font/popins/Poppins-Black.ttf') format('truetype')
+}
 
 /* ---------------- Yekan Bakh Fonts ---------------- */
 
 @font-face {
   font-family: yekanBkh;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
   font-weight: 100;
   src: local("Yekan Bakh FaNum"), url('/font/yekan-bkh/woff/YekanBakhFaNum-thin.woff') format('woff'),
     url('/font/yekan-bkh/woff2/YekanBakhFaNum-thin.woff2') format('woff2');
@@ -22,7 +58,7 @@
 @font-face {
   font-family: yekanBkh;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
   font-weight: 300;
   src: local("Yekan Bakh FaNum"), url('/font/yekan-bkh/woff/YekanBakhFaNum-Light.woff') format('woff'),
     url('/font/yekan-bkh/woff2/YekanBakhFaNum-Light.woff2') format('woff2');
@@ -31,7 +67,7 @@
 @font-face {
   font-family: yekanBkh;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
   font-weight: normal;
   src: local("Yekan Bakh FaNum"), url('/font/yekan-bkh/woff/YekanBakhFaNum-Regular.woff') format('woff'),
     url('/font/yekan-bkh/woff2/YekanBakhFaNum-Regular.woff2') format('woff2');
@@ -40,7 +76,7 @@
 @font-face {
   font-family: yekanBkh;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
   font-weight: 600;
   src: local("Yekan Bakh FaNum"), url('/font/yekan-bkh/woff/YekanBakhFaNum-SemiBold.woff') format('woff'),
     url('/font/yekan-bkh/woff2/YekanBakhFaNum-SemiBold.woff2') format('woff2');
@@ -49,7 +85,7 @@
 @font-face {
   font-family: yekanBkh;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
   font-weight: bold;
   src: local("Yekan Bakh FaNum"), url('/font/yekan-bkh/woff/YekanBakhFaNum-Bold.woff') format('woff'),
     url('/font/yekan-bkh/woff2/YekanBakhFaNum-Bold.woff2') format('woff2');
@@ -58,7 +94,7 @@
 @font-face {
   font-family: yekanBkh;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
   font-weight: 800;
   src: local("Yekan Bakh FaNum"), url('/font/yekan-bkh/woff/Yekan Bakh FaNum-ExtraBold.woff') format('woff'),
     url('/font/yekan-bkh/woff2/Yekan Bakh FaNum-ExtraBold.woff2') format('woff2');
@@ -67,7 +103,7 @@
 @font-face {
   font-family: yekanBkh;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
   font-weight: 900;
   src: local("Yekan Bakh FaNum"), url('/font/yekan-bkh/woff/Yekan Bakh FaNum-Black.woff') format('woff'),
     url('/font/yekan-bkh/woff2/Yekan Bakh FaNum-Black.woff2') format('woff2');
@@ -76,7 +112,7 @@
 @font-face {
   font-family: yekanBkh;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
   font-weight: 950;
   src: local("Yekan Bakh FaNum"), url('/font/yekan-bkh/woff/Yekan Bakh FaNum-ExtraBlack.woff') format('woff'),
     url('/font/yekan-bkh/woff2/Yekan Bakh FaNum-ExtraBlack.woff2') format('woff2');
@@ -89,13 +125,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
+
 
 
 
@@ -132,5 +162,5 @@ a {
 }
 
 section {
-  @apply  w-full py-6
+  @apply  w-full py-6 md:py-12
 }

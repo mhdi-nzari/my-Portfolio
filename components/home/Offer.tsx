@@ -1,12 +1,13 @@
-import CountDownTimer from "@/Hook/CountDownTimer";
+
+import CountDownTimer from "@/Hook/countDownTimer";
 import CustomButton from "../CustomButton";
 import Image from "next/image";
 
 const Offer = () => {
   return (
     <section className="container">
-      <div className="lg:max-w-ful relative mx-auto flex w-full max-w-md flex-col items-center rounded-xl bg-offer bg-cover  bg-center  bg-no-repeat p-5 pt-14 ">
-        <p className="pb-4 pt-3 text-center text-base font-[990] text-white sm:text-2xl">
+      <div className="lg:max-w-ful relative mx-auto flex w-full max-w-md flex-col items-center rounded-xl bg-offer bg-cover  bg-center  bg-no-repeat pb-5 px-4 pt-14 ">
+        <p className="pb-4 pt-3 text-center text-20 font-[990] text-white sm:text-2xl">
           تخفیف ویژه دوره آموزش برنامه نویسی
         </p>
 

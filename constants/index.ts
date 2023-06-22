@@ -86,3 +86,31 @@ export const achievementItem = [
     colorIcon: "#F1891E",
   },
 ];
+
+
+export const servicesItem = [
+  {
+    icon: "/images/icon/code_service.svg",
+    colorIcon: "#F1891E",
+    title: "برنامه نویس فرانت اند",
+    desc: "بیشتر UI طراحی میکنم و سعی میکنم به روز باشم.",
+  },
+  {
+    icon: "/images/icon/computer_service.svg",
+    colorIcon: "#262C9C",
+    title: "طراحی رابط کاربری",
+    desc: "بیشتر UI طراحی میکنم و سعی میکنم به روز باشم.",
+  },
+  {
+    icon: "/images/icon/microphone_service.svg",
+    colorIcon: "#831BEC",
+    title: "پادکست برنامه نویسی",
+    desc: "بیشتر UI طراحی میکنم و سعی میکنم به روز باشم.",
+  },
+  {
+    icon: "/images/icon/ranking_service.svg",
+    colorIcon: "#F2473C",
+    title: "منتور و مشاوره",
+    desc: "بیشتر UI طراحی میکنم و سعی میکنم به روز باشم.",
+  },
+];

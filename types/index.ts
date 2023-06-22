@@ -19,3 +19,9 @@ export interface activeMenyProps {
   setMenuClicked: any;
 }
 
+
+export interface titleBarProps {
+  title: string;
+  desc: string;
+  sufixTitle: string;
+}

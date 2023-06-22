@@ -19,12 +19,12 @@ const Hero = () => {
             </span>
             <span className="text-primary font-black"> مهدی نظری</span> هستم!
           </p>
-          <div className="mt-2 w-[220px] sm:w-fit h-[38px] sm:h-fit bg-grey-900 rounded-full flex justify-center items-center px-4 py-2">
-            <p className="text-sm sm:text-20 text-white font-light">
-              Junior
-              <span className="pl-1 text-secondary font-medium">
+          <div className="mt-2 w-[240px] sm:w-fit h-[38px] sm:h-fit bg-grey-900 rounded-full flex justify-center items-center px-4 py-2">
+            <p className="text-sm sm:text-20 text-white font-[popinsLight] ">
+              <span className="px-1 text-secondary font-medium">
                 Front End Developer
               </span>
+              Expert
             </p>
           </div>
 
@@ -46,7 +46,7 @@ const Hero = () => {
               <span className="absolute -right-2 -bottom-2 border-2 border-secondary w-4 h-4 bg-white"></span>
             </div>
 
-            <p className="pt-7  text-grey-500 font-medium  text-sm sm:text-18 text-center lg:text-right">
+            <p className="pt-7 leading-8  text-grey-500 font-medium  text-sm sm:text-18 text-center lg:text-right">
               گاهی اوقات
               <span className="inline-flex text-primary font-semibold px-0.5">
                 رابط کاربری
@@ -85,17 +85,17 @@ const Hero = () => {
           </div>
 
           <div className="w-full  py-7 md:pt-2 flex lg:justify-between items-center ">
-            <div className="flex gap-3 flex-col sm:flex-row sm:justify-start items-center w-full">
+            <div className="flex gap-3 flex-col sm:flex-row sm:justify-start items-center w-full px-5 md:px-0">
               <CustomButton
                 textStyles="text-white whitespace-nowrap text-16 font-normal pl-2"
-                containerStyles="lg:px-[20px] xl:px-[31px] lg:py-[10px] xl:py-[16px] bg-primary w-full mx-0 lg:w-fit"
+                containerStyles="lg:px-[20px] xl:px-[31px] py-4 px-8 bg-primary w-full mx-0 lg:w-fit"
                 leftIcon="/images/icon/files-pdf.svg"
                 title="رزومه من"
                 btnType="button"
               />
               <CustomButton
                 textStyles="text-primary whitespace-nowrap text-16 font-normal pl-2 group-hover:text-white"
-                containerStyles="lg:px-[20px] xl:px-[31px] lg:py-[10px] xl:py-[16px] w-full mx-0 lg:w-fit border border-primary hover:bg-primary "
+                containerStyles="lg:px-[20px] xl:px-[31px] py-4 px-8 w-full mx-0 lg:w-fit border border-primary hover:bg-primary "
                 title="تماس با من"
                 btnType="button"
               />

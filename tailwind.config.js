@@ -1,11 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  mode: "jit",
   theme: {
     container: {
       center: true,
@@ -31,6 +30,7 @@ module.exports = {
           600: "#596066",
           800: "#383F45",
           900: "#24292E",
+          1000: "#1A1D1F",
         },
 
         basketGreen: "#2F9461",
@@ -59,12 +59,15 @@ module.exports = {
         34: "34px",
         56: "56px",
         68: "68px",
-       
       },
       backgroundImage: {
         pattern: "url('/pattern.png')",
         hero: "url('/images/hero.png')",
         offer: "url('/images/offer_bg.png')",
+        circle_empty: "url('/images/circle_empty.svg')",
+      },
+      boxShadow: {
+        default: "20px 40px 80px 0px rgba(45, 51, 81, 0.08);",
       },
     },
   },

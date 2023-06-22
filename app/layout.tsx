@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 import "tailwindcss/tailwind.css";
 
-import localFont from "@next/font/local";
+import localFont from "next/font/local";
 import Head from "next/head";
 
 /* ---------------- Dana Fonts ---------------- */
