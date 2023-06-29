@@ -19,7 +19,7 @@ const ServiceItem = ({
 }: itemType) => {
   return (
     <figure
-      className={`relative h-fit w-[160px] rounded-2xl  bg-white shadow-default md:w-[218px] flex flex-wrap first-of-type:mt-10  ${ContainerClass}`}
+      className={`relative h-fit w-[200px] rounded-2xl  bg-white shadow-default md:w-[218px] flex flex-wrap first-of-type:mt-10  ${ContainerClass}`}
     >
       <div className="w-full  px-4 pb-[30px] ">
         <div
