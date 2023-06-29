@@ -8,6 +8,7 @@ const Services = () => {
   return (
     <section className="container bg-circle_empty bg-center  bg-no-repeat">
       <TitleBar
+      bgPattern="/images/icon/flash.svg"
         title="من"
         sufixTitle="خدمات تخصصی"
         desc="تو هرزمینه تخصص دارم و میتونم به کسب و کار شما کمک کنم خوشحال میشم حتما بهم پیام بده ."
@@ -48,7 +49,7 @@ const Services = () => {
 
       <div className="w-full pt-12">
           <CustomButton
-            title="مشاهده دوره"
+            title="اطلاعات بیشتر"
             leftIcon="/images/icon/arrow_left_white.svg"
             textStyles="text-white text-base"
             btnType={"button"}

@@ -11,7 +11,6 @@ export interface customButtonProps {
   children?: React.ReactNode;
 }
 
-
 export interface activeMenyProps {
   activeMenu: boolean;
   setActiveMenu: any;
@@ -19,9 +18,29 @@ export interface activeMenyProps {
   setMenuClicked: any;
 }
 
+export interface titleBarPropsWithBgPattern extends titleBarProps {
+  bgPattern: string;
+}
 
 export interface titleBarProps {
   title: string;
   desc: string;
   sufixTitle: string;
+  sufixIsBreak?: boolean;
+  bgPattern?: string;
+}
+
+export interface categoryItem {
+  title: string;
+  image: string;
+  student: number;
+  star: number;
+  isRecord: boolean;
+  courseTime: string;
+  releasePlatform: string;
+  epizodNumber: string;
+  price: string;
+  offer: string;
+  priceOffer: string;
+  productLink: string;
 }

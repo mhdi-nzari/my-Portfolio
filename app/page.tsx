@@ -1,4 +1,4 @@
-import { Achievement, Hero, Offer, Services } from "@/components";
+import { Achievement, Hero, NewsestCat, Offer, Services } from "@/components";
 import Head from "next/head";
 
 export default function Home() {
@@ -12,6 +12,7 @@ export default function Home() {
         <Achievement />
         <Offer />
         <Services />
+        <NewsestCat/>
       </main>
     </>
   );

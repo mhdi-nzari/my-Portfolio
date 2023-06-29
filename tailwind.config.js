@@ -26,11 +26,16 @@ module.exports = {
         },
         secondary: "#F1891E",
         grey: {
+          400: "#9EA5AD",
           500: "#676E76",
           600: "#596066",
+          700: "#454C52",
           800: "#383F45",
           900: "#24292E",
           1000: "#1A1D1F",
+        },
+        error: {
+          600: "#F34141",
         },
 
         basketGreen: "#2F9461",
@@ -71,5 +76,9 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+
+  plugins: [
+    require("@tailwindcss/line-clamp"),
+    require("@tailwindcss/aspect-ratio"),
+  ],
 };

@@ -16,7 +16,7 @@ const CustomButton = ({
   return (
     <button
     
-      className={`custom__btn group ${containerStyles ? containerStyles : ""}`}
+      className={`custom__btn group outline outline-offset-2 outline-2 outline-transparent hover:outline-primary hover:-translate-y-1 ${containerStyles ? containerStyles : ""}`}
       type={btnType || "button"}
       disabled={isDisabled}
       onClick={handleClick}
