@@ -5,8 +5,8 @@ import React from "react";
 const PortfolioItem = () => {
   return (
     <figure className="relative h-[400px] w-full rounded-2xl bg-portfolio_item bg-cover bg-center bg-no-repeat group">
-      <figcaption className="absolute bottom-0 left-0   w-full   backdrop-blur-sm bg-white/50  rounded-ee-2xl rounded-es-2xl">
-        <div className="w-full px-3 py-5 ">
+      <figcaption className="absolute bottom-0 left-0   w-full   backdrop-blur-sm bg-white/50  rounded-ee-2xl rounded-es-2xl border-t ">
+        <div className="w-full px-3 py-3 ">
           <div className="flex items-center justify-start gap-2">
             <Link href={"/"}>
               <p className="text-right text-xl font-[950] text-grey-900">
@@ -33,8 +33,8 @@ const PortfolioItem = () => {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M5.84589 1.33331C5.84589 1.05717 5.62203 0.833313 5.34589 0.833313C5.06975 0.833313 4.84589 1.05717 4.84589 1.33331V2.3333H4.05079C2.92511 2.3333 2.01257 3.24584 2.01257 4.37152V5.49998H14.0126H14.0126V4.37152C14.0126 3.24585 13.1 2.3333 11.9744 2.3333H11.1792V1.33331C11.1792 1.05717 10.9554 0.833313 10.6792 0.833313C10.4031 0.833313 10.1792 1.05717 10.1792 1.33331V2.3333H5.84589V1.33331ZM14.0126 6.49998H14.0126V12.6284C14.0126 13.7541 13.1 14.6666 11.9744 14.6666H4.05079C2.92511 14.6666 2.01257 13.7541 2.01257 12.6284V6.49998H14.0126ZM8.01256 10.6667C8.38075 10.6667 8.67922 10.3682 8.67922 9.99999C8.67922 9.6318 8.38075 9.33333 8.01256 9.33333C7.64437 9.33333 7.34589 9.6318 7.34589 9.99999C7.34589 10.3682 7.64437 10.6667 8.01256 10.6667ZM11.3459 9.99999C11.3459 10.3682 11.0474 10.6667 10.6792 10.6667C10.311 10.6667 10.0126 10.3682 10.0126 9.99999C10.0126 9.6318 10.311 9.33333 10.6792 9.33333C11.0474 9.33333 11.3459 9.6318 11.3459 9.99999ZM5.34589 10.6667C5.71408 10.6667 6.01256 10.3682 6.01256 9.99999C6.01256 9.6318 5.71408 9.33333 5.34589 9.33333C4.9777 9.33333 4.67922 9.6318 4.67922 9.99999C4.67922 10.3682 4.9777 10.6667 5.34589 10.6667Z"
                       fill="#383F45"
                     />

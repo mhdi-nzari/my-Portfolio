@@ -1,6 +1,7 @@
 import {
   Achievement,
   Blog,
+  Comment,
   Hero,
   NewsestCat,
   Offer,
@@ -25,6 +26,7 @@ export default function Home() {
         <InstaBanner />
         <Portfolio />
         <Blog />
+        <Comment/>
       </main>
     </>
   );

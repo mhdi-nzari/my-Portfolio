@@ -34,7 +34,7 @@ const BlogItem = ({
           {/* hashtag */}
           <Link
             href={hashtagLink}
-            className="w-fit rounded-full bg-[#E9EAFF] px-3 py-2 text-xs font-medium  text-primary"
+            className="w-fit rounded-full bg-[#E9EAFF] px-3 py-2 text-xs font-medium  text-primary transtion-all duration-300 outline outline-2 outline-offset-2 outline-transparent hover:outline-[#E9EAFF]"
           >
             {hashtag}
           </Link>
@@ -71,8 +71,8 @@ const BlogItem = ({
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M17.6086 11.789C18.5749 10.7723 18.5749 9.2276 17.6086 8.21087C15.9788 6.49607 13.1796 4.16663 10 4.16663C6.8204 4.16663 4.02124 6.49607 2.39142 8.21087C1.42508 9.2276 1.42508 10.7723 2.39142 11.789C4.02124 13.5038 6.8204 15.8333 10 15.8333C13.1796 15.8333 15.9788 13.5038 17.6086 11.789ZM10 12.5C11.3807 12.5 12.5 11.3807 12.5 9.99996C12.5 8.61925 11.3807 7.49996 10 7.49996C8.61929 7.49996 7.5 8.61925 7.5 9.99996C7.5 11.3807 8.61929 12.5 10 12.5Z"
                   fill="#596066"
                 />

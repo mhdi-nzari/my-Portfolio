@@ -94,7 +94,7 @@ const MobileMenu: React.FC<activeMenyProps> = ({
                 src="/images/Line_navbar.png"
                 loading="lazy"
                 alt="line"
-                className="w-full"
+                className="w-full h-full"
               />
             </div>
           </div>
