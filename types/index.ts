@@ -58,3 +58,12 @@ export interface portfolioItem {
   author: string;
   hashtagLink: string;
 }
+
+export interface detailCommentProps {
+  customerName: string;
+  courseTitle: string;
+  desc: string;
+  time: string;
+  courseLink: string;
+  customerImage: string;
+}

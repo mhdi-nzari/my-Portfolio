@@ -32,8 +32,8 @@ const Navbar = () => {
   return (
     <header
       ref={menuRef}
-      className={`container z-40 w-full transition-all  duration-500 ${
-        isHeaderFixed ? "fixed top-0 bg-white shadow-default  rounded-ee-2xl rounded-es-2xl" : "relative"
+      className={`container z-40 w-screen transition-all  duration-500 ${
+        isHeaderFixed ? "fixed top-0 left-0 right-0  !mx-0 bg-white shadow-default  rounded-ee-2xl rounded-es-2xl" : "relative"
       }`}
     >
       <nav

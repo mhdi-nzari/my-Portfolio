@@ -12,36 +12,48 @@ const CustomButton = ({
   isDisabled,
   btnType,
   children,
-  link
+  link,
 }: customButtonProps) => {
+  const renderButtonContent = () => {
+    return (
+      <>
+        <button
+          className={`custom__btn group outline outline-2 outline-offset-2 outline-transparent hover:-translate-y-1   ${
+            containerStyles ? containerStyles : ""
+          }`}
+          type={btnType || "button"}
+          disabled={isDisabled}
+          onClick={handleClick}
+        >
+          {children}
+          <span className={textStyles}>{title}</span>
 
+          {leftIcon && (
+            <div className="relative h-6 w-6">
+              <Image
+                src={leftIcon}
+                alt="arrow_left"
+                fill
+                loading="lazy"
+                className="object-contain"
+              />
+            </div>
+          )}
+        </button>
+      </>
+    );
+  };
 
   return (
-    <Link href={link || ""}>
-      <button
-        className={`custom__btn group outline outline-2 outline-offset-2 outline-transparent hover:-translate-y-1 hover:outline-primary  ${
-          containerStyles ? containerStyles : ""
-        }`}
-        type={btnType || "button"}
-        disabled={isDisabled}
-        onClick={handleClick}
-      >
-        {children}
-        <span className={textStyles}>{title}</span>
-
-        {leftIcon && (
-          <div className="relative h-6 w-6">
-            <Image
-              src={leftIcon}
-              alt="arrow_left"
-              fill
-              loading="lazy"
-              className="object-contain"
-            />
-          </div>
-        )}
-      </button>
-    </Link>
+    <>
+      {link ? (
+        <Link className="w-fit" href={link || ""}>
+          {renderButtonContent()}
+        </Link>
+      ) : (
+        <div className="w-auto">{renderButtonContent()}</div>
+      )}
+    </>
   );
 };
 

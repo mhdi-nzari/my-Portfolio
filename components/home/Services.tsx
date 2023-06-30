@@ -47,7 +47,7 @@ const Services = () => {
         ))}
       </div>
 
-      <div className="w-full pt-12">
+      <div className="w-full pt-12 mx-auto">
           <CustomButton
             title="اطلاعات بیشتر"
             leftIcon="/images/icon/arrow_left_white.svg"
