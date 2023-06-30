@@ -1,7 +1,7 @@
 import {
   Achievement,
+  Blog,
   Hero,
-  LatestBlog,
   NewsestCat,
   Offer,
   Portfolio,
@@ -24,7 +24,7 @@ export default function Home() {
         <NewsestCat />
         <InstaBanner />
         <Portfolio />
-        <LatestBlog/>
+        <Blog />
       </main>
     </>
   );

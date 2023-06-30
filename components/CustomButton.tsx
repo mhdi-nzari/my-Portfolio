@@ -14,10 +14,12 @@ const CustomButton = ({
   children,
   link
 }: customButtonProps) => {
+
+
   return (
-    <Link href={link}>
+    <Link href={link || ""}>
       <button
-        className={`custom__btn group outline outline-2 outline-offset-2 outline-transparent hover:-translate-y-1 hover:outline-primary ${
+        className={`custom__btn group outline outline-2 outline-offset-2 outline-transparent hover:-translate-y-1 hover:outline-primary  ${
           containerStyles ? containerStyles : ""
         }`}
         type={btnType || "button"}

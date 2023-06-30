@@ -20,7 +20,7 @@ const Offer = () => {
             leftIcon="/images/icon/arrow_left_white.svg"
             textStyles="text-white text-base"
             btnType={"button"}
-            containerStyles={"bg-secondary mx-auto !px-[17px] py-[16px]"}
+            containerStyles={"bg-secondary mx-auto !px-[17px] py-[16px] hover:outline-secondary"}
           />
         </div>
 

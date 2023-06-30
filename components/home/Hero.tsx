@@ -89,14 +89,14 @@ const Hero = () => {
             <div className="flex w-full flex-col items-center gap-7 px-5 sm:flex-row sm:justify-start md:px-0">
               <CustomButton
                 textStyles="text-white whitespace-nowrap text-16 font-normal pl-2"
-                containerStyles="lg:px-[20px] xl:px-[31px] py-4 px-8 bg-primary w-full mx-0 lg:w-fit"
+                containerStyles="lg:px-[20px] xl:px-[31px] py-4 px-8 bg-primary w-full mx-0 lg:w-fit hover:outline-primary"
                 leftIcon="/images/icon/files-pdf.svg"
                 title="رزومه من"
                 btnType="button"
               />
               <CustomButton
                 textStyles="text-primary whitespace-nowrap text-16 font-normal pl-2 group-hover:text-white"
-                containerStyles="lg:px-[20px] xl:px-[31px] py-4 px-8 w-full mx-0 lg:w-fit border border-primary hover:bg-primary "
+                containerStyles="lg:px-[20px] xl:px-[31px] py-4 px-8 w-full mx-0 lg:w-fit border border-primary hover:bg-primary  border-primary "
                 title="تماس با من"
                 btnType="button"
               />

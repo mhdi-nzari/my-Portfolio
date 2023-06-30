@@ -22,6 +22,7 @@ const Portfolio = () => {
             leftIcon="/images/icon/arrow_left_white.svg"
             textStyles="text-white text-base"
             btnType={"button"}
+            link="/portfolio"
             containerStyles={"bg-primary mx-auto !px-[17px] py-[16px]"}
           />
         </div>

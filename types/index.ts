@@ -9,7 +9,7 @@ export interface customButtonProps {
   textStyles?: string;
   handleClick?: MouseEventHandler<HTMLButtonElement>;
   children?: React.ReactNode;
-  link?:string
+  link?: string | undefined;
 }
 
 export interface activeMenyProps {
@@ -44,4 +44,15 @@ export interface categoryItem {
   offer: string;
   priceOffer: string;
   productLink: string;
+}
+
+export interface portfolioItem {
+  title: string;
+  image: string;
+  hashtag: string;
+  timeperView: string;
+  view: string;
+  desc: string;
+  time: string;
+  link: string;
 }

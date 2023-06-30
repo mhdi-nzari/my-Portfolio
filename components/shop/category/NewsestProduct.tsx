@@ -38,6 +38,7 @@ const NewsestCat = () => {
           bgPattern="/images/icon/teacher.svg"
           sufixIsBreak
           title="دوره های آموزشی"
+
           sufixTitle="جدیدترین"
           desc="تو هرزمینه تخصص دارم و میتونم به کسب و کار شما کمک کنم خوشحال میشم حتما بهم پیام بده ."
         />
@@ -48,6 +49,7 @@ const NewsestCat = () => {
             leftIcon="/images/icon/arrow_left_white.svg"
             textStyles="text-white text-base"
             btnType={"button"}
+            link="/courses"
             containerStyles={"bg-primary mx-auto !px-[17px] py-[16px]"}
           />
         </div>
