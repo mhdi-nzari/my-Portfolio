@@ -6,6 +6,7 @@ import SwiperCore, { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
+import BlogItem from "./BlogItem";
 SwiperCore.use([Autoplay, Navigation]);
 
 const LatestBlog = () => {
@@ -50,7 +51,21 @@ const LatestBlog = () => {
         onReachEnd={handleReachEnd}
         onSlideChange={handleSlideChange}
       >
-      
+        <SwiperSlide>
+          <BlogItem
+            author="مهدی نظری"
+            title={"برنامه نویسی را از کجا شروع کنیم؟"}
+            image={"/images/blogItem.svg"}
+            hashtag={"برنامه نویسی"}
+            timeperView={5}
+            view={"۲,۹۸۲"}
+            desc={"لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون  روزنامه و مجله است..."}
+            time={"10"}
+            link={"/blog"}
+            hashtagLink="/blog/category"
+          
+          />
+        </SwiperSlide>
       </Swiper>
 
       <div className="flex w-full items-center justify-center gap-5 pt-10">

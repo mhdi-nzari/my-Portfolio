@@ -6,7 +6,7 @@ import Offer from "./home/Offer";
 import Services from "./home/Services";
 import NewsestCat from "./shop/category/NewsestProduct";
 import Portfolio from "./home/Portfolio";
-import LatestBlog from "./blog/LatestBlog";
+
 import Blog from "./home/Blog";
 
 export {

@@ -50,9 +50,11 @@ export interface portfolioItem {
   title: string;
   image: string;
   hashtag: string;
-  timeperView: string;
+  timeperView: number;
   view: string;
   desc: string;
   time: string;
   link: string;
+  author: string;
+  hashtagLink: string;
 }
