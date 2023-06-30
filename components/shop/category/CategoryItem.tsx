@@ -35,7 +35,7 @@ const CategoryItem = ({
         {/* section one */}
         <div className="flex w-full flex-wrap items-center justify-between gap-y-3 pb-4">
           {/* item one  */}
-          <div className="flex w-auto gap-3 ">
+          <div className="flex w-auto gap-7 ">
             {/* student one */}
             <div className="flex items-center gap-0.5">
               <span>
@@ -212,7 +212,7 @@ const CategoryItem = ({
           </div>
           <div className="flex flex-1 flex-col items-end justify-center gap-1">
             <div className="flex gap-1 items-center">
-              <p className="text-20 font-[950] text-grey-900">{price}</p>
+              <p className="text-20 font-extrabold text-grey-900">{price}</p>
               <svg
                 className="mr-1 "
                 width="14"

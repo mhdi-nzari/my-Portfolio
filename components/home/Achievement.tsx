@@ -20,6 +20,7 @@ const Achievement = () => {
                   width={27}
                   height={27}
                   alt={item.title}
+                  loading="lazy"
                 />
               </div>
 

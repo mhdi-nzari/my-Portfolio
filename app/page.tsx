@@ -1,4 +1,13 @@
-import { Achievement, Hero, NewsestCat, Offer, Services } from "@/components";
+import {
+  Achievement,
+  Hero,
+  LatestBlog,
+  NewsestCat,
+  Offer,
+  Portfolio,
+  Services,
+} from "@/components";
+import InstaBanner from "@/components/InstaBanner";
 import Head from "next/head";
 
 export default function Home() {
@@ -12,7 +21,10 @@ export default function Home() {
         <Achievement />
         <Offer />
         <Services />
-        <NewsestCat/>
+        <NewsestCat />
+        <InstaBanner />
+        <Portfolio />
+        <LatestBlog/>
       </main>
     </>
   );

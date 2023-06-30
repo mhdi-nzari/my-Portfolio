@@ -5,63 +5,64 @@ import CustomButton from "../CustomButton";
 const Hero = () => {
   return (
     <section className="container bg-hero bg-right bg-repeat-x">
-      <div className="w-full flex flex-col lg:flex-row gap-5 sm:gap-7 md:gap-12 justify-center items-center">
-        <div className="flex  md:w-7/12 flex-col justify-center items-center lg:items-start max-w-md lg:max-w-full">
-          <p className="text-grey-600 text-20 sm:text-xl font-normal text-center flex ">
+      <div className="flex w-full flex-col items-center justify-center gap-5 sm:gap-7 md:gap-12 lg:flex-row">
+        <div className="flex  max-w-md flex-col items-center justify-center md:w-7/12 lg:max-w-full lg:items-start">
+          <p className="flex text-center text-20 font-normal text-grey-600 sm:text-xl ">
             سلام
-            <span className="px-1 flex items-center justify-center">
+            <span className="flex items-center justify-center px-1">
               <Image
                 alt="hand icon"
                 src={"/images/hi.png"}
                 width={20}
                 height={20}
+                loading="lazy"
               />
             </span>
-            <span className="text-primary font-black"> مهدی نظری</span> هستم!
+            <span className="font-black text-primary"> مهدی نظری</span> هستم!
           </p>
-          <div className="mt-2 w-[240px] sm:w-fit h-[38px] sm:h-fit bg-grey-900 rounded-full flex justify-center items-center px-4 py-2">
-            <p className="text-sm sm:text-20 text-white font-[popinsLight] ">
-              <span className="px-1 text-secondary font-medium">
+          <div className="mt-2 flex h-[38px] w-[240px] items-center justify-center rounded-full bg-grey-900 px-4 py-2 sm:h-fit sm:w-fit">
+            <p className="font-[popinsLight] text-sm text-white sm:text-20 ">
+              <span className="px-1 font-medium text-secondary">
                 Front End Developer
               </span>
               Expert
             </p>
           </div>
 
-          <div className="pt-5 pb-7 flex flex-col items-center lg:items-start">
-            <p className="text-24 sm:text-34 md:text-56 text-center  font-black text-primary pb-5 whitespace-nowrap">
+          <div className="flex flex-col items-center pb-7 pt-5 lg:items-start">
+            <p className="whitespace-nowrap pb-5 text-center text-24  font-black text-primary sm:text-34 md:text-56">
               یه برنامه نویس شاد و پر انرژی
             </p>
-            <div className="border-2 border-secondary py-3 px-5 relative w-fit">
-              <p className="text-24 sm:text-32 md:text-56 font-[950] text-secondary text-center whitespace-nowrap">
+            <div className="relative w-fit border-2 border-secondary px-5 py-3">
+              <p className="whitespace-nowrap text-center text-24 font-[950] text-secondary sm:text-32 md:text-56">
                 توسعه وب و رابط کاربری
               </p>
 
-              <span className="absolute -right-2 -top-2 border-2 border-secondary w-4 h-4 bg-white"></span>
+              <span className="absolute -right-2 -top-2 h-4 w-4 border-2 border-secondary bg-white"></span>
 
-              <span className="absolute -left-2 -top-2 border-2 border-secondary w-4 h-4 bg-white"></span>
+              <span className="absolute -left-2 -top-2 h-4 w-4 border-2 border-secondary bg-white"></span>
 
-              <span className="absolute -left-2 -bottom-2 border-2 border-secondary w-4 h-4 bg-white"></span>
+              <span className="absolute -bottom-2 -left-2 h-4 w-4 border-2 border-secondary bg-white"></span>
 
-              <span className="absolute -right-2 -bottom-2 border-2 border-secondary w-4 h-4 bg-white"></span>
+              <span className="absolute -bottom-2 -right-2 h-4 w-4 border-2 border-secondary bg-white"></span>
             </div>
 
-            <p className="pt-7 leading-8  text-grey-500 font-medium  text-sm sm:text-18 text-center lg:text-right">
+            <p className="pt-7 text-center  text-sm font-medium  leading-8 text-grey-500 sm:text-18 lg:text-right">
               گاهی اوقات
-              <span className="inline-flex text-primary font-semibold px-0.5">
+              <span className="inline-flex px-0.5 font-semibold text-primary">
                 رابط کاربری
               </span>
               طراحی میکنم ، گاهی اوقاتم نه همون رابط رو
-              <span className="inline-flex text-primary font-semibold px-0.5">
+              <span className="inline-flex px-0.5 font-semibold text-primary">
                 توسعه
               </span>
               میدم و
-              <span className="inline-flex text-primary font-semibold px-0.5">
+              <span className="inline-flex px-0.5 font-semibold text-primary">
                 برنامه نویسی
               </span>
               میکنم ، گاهی وقتا آموزش میبینم و به آدمای اطرافم جهت پیشرفتشون کمک
               میکنم و
-              <span className="inline-flex text-primary font-semibold px-0.5">
+              <span className="inline-flex px-0.5 font-semibold text-primary">
                 مشاوره برنامه نویسی
               </span>
               میدم.
@@ -84,8 +85,8 @@ const Hero = () => {
             </svg>
           </div>
 
-          <div className="w-full  py-7 md:pt-2 flex lg:justify-between items-center ">
-            <div className="flex gap-3 flex-col sm:flex-row sm:justify-start items-center w-full px-5 md:px-0">
+          <div className="flex  w-full items-center py-7 md:pt-2 lg:justify-between ">
+            <div className="flex w-full flex-col items-center gap-7 px-5 sm:flex-row sm:justify-start md:px-0">
               <CustomButton
                 textStyles="text-white whitespace-nowrap text-16 font-normal pl-2"
                 containerStyles="lg:px-[20px] xl:px-[31px] py-4 px-8 bg-primary w-full mx-0 lg:w-fit"
@@ -102,7 +103,7 @@ const Hero = () => {
             </div>
             <div className="hidden lg:block">
               <svg
-                className="w-32 h-32 lg:w-auto lg:h-auto"
+                className="h-32 w-32 lg:h-auto lg:w-auto"
                 width="196"
                 height="75"
                 viewBox="0 0 196 75"
@@ -118,11 +119,12 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-full h-auto  md:w-5/12">
+        <div className="h-auto w-full  md:w-5/12">
           <Image
             src={"/images/hero_image.png"}
             className="mx-auto "
             width={465}
+            loading="lazy"
             height={433}
             alt="introduction mahdi nazari"
           />

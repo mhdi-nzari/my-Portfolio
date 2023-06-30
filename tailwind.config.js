@@ -70,6 +70,8 @@ module.exports = {
         hero: "url('/images/hero.png')",
         offer: "url('/images/offer_bg.png')",
         circle_empty: "url('/images/circle_empty.svg')",
+        instagram_banner: "url('/images/instagramBg.svg')",
+     portfolio_item: "url('/images/portfo.svg')",
       },
       boxShadow: {
         default: "20px 40px 80px 0px rgba(45, 51, 81, 0.08);",

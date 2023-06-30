@@ -1,5 +1,6 @@
 
-import CountDownTimer from "@/Hook/countDownTimer";
+
+import CountDownTimer from "@/Hook/CountDownTimer";
 import CustomButton from "../CustomButton";
 import Image from "next/image";
 
@@ -30,7 +31,8 @@ const Offer = () => {
             width="175"
             className=" h-[105px] w-[86px] lg:h-[176px] lg:w-[175px]"
             src="/images/offer_element.png"
-            alt=""
+            alt="offer elemenet"
+            loading="lazy"
           />
         </div>
       </div>

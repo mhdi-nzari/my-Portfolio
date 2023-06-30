@@ -26,7 +26,7 @@ const ServiceItem = ({
           className={` absolute left-0 right-0 top-0 mx-auto w-fit -translate-y-1/2 rounded-2xl p-3`}
           style={{ backgroundColor: backgroundIcon }}
         >
-          <Image src={icon} width={34} height={34} alt={title} />
+          <Image loading="lazy" src={icon} width={34} height={34} alt={title} />
         </div>
         <figcaption className="pt-[52px]">
           <h4 className="pb-2 text-center text-[14px] font-[990] text-grey-1000">

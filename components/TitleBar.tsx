@@ -26,7 +26,7 @@ const TitleBar = ({
         {desc}
       </p>
 
-      <div className="w-full pt-5">
+      <div className="w-full pt-10">
         <svg
           width="245"
           height="11"
@@ -44,7 +44,7 @@ const TitleBar = ({
 
       {bgPattern && (
         <div className="absolute bottom-0 left-0 right-0 top-0 -z-10">
-          <Image src={bgPattern} width={214} height={214} className="mx-auto" alt="background titlebar" />
+          <Image src={bgPattern} width={214} height={214}  loading="lazy"className="mx-auto" alt="background titlebar" />
         </div>
       )}
     </div>

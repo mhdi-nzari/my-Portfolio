@@ -9,6 +9,7 @@ export interface customButtonProps {
   textStyles?: string;
   handleClick?: MouseEventHandler<HTMLButtonElement>;
   children?: React.ReactNode;
+  link?:string
 }
 
 export interface activeMenyProps {

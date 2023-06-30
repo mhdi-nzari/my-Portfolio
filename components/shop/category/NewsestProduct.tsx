@@ -6,8 +6,6 @@ import CustomButton from "@/components/CustomButton";
 
 import SwiperCore, { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
 // Import Swiper styles
 import "swiper/css";
 SwiperCore.use([Autoplay, Navigation]);
@@ -54,7 +52,7 @@ const NewsestCat = () => {
           />
         </div>
       </div>
-      <div className="mt-11 w-full pb-24">
+      <div className="mt-11 w-full pb-16">
         <Swiper
           modules={[Autoplay, Navigation]}
           spaceBetween={50}
