@@ -1,11 +1,14 @@
 export const footerLinks = [
   {
-    title: "About",
     links: [
-      { title: "How it works", url: "/" },
-      { title: "Featured", url: "/" },
-      { title: "Partnership", url: "/" },
-      { title: "Bussiness Relation", url: "/" },
+      { title: "صفحه اصلی", url: "/" },
+      { title: "فروشگاه", url: "/shop" },
+      { title: "وبلاگ", url: "/blog" },
+      { title: "پادکست", url: "/podcast" },
+      { title: "پادکست", url: "/podcast" },
+      { title: "درباره من", url: "/aboutMe" },
+      { title: "شرایط و قوانین", url: "/podcast" },
+      { title: "تماس با من", url: "/contactMe" },
     ],
   },
 ];
