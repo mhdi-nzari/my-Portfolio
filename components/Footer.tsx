@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import 'swiper/css/pagination';
+import "swiper/css/pagination";
 
 import Image from "next/image";
 SwiperCore.use([Autoplay, Pagination]);
@@ -20,6 +20,14 @@ const Footer = () => {
     window.open(
       "https://www.zarinpal.com/trustPage/" + window.location.hostname,
       "width=450, height=600, scrollbars=no, resizable=no"
+    );
+  };
+
+  const showSamandehi = () => {
+    window.open(
+      "https://logo.samandehi.ir/Verify.aspx?id=342716&p=xlaoaodsuiwkjyoerfthgvka",
+      "Popup",
+      "toolbar=no, scrollbars=no, location=no, statusbar=no, menubar=no, resizable=0, width=450, height=630, top=30"
     );
   };
 
@@ -195,7 +203,11 @@ const Footer = () => {
               >
                 {/* samandehi */}
                 <SwiperSlide>
-                  <a href={""} title="لوگو ساماندهی" className="h-44 w-full">
+                  <div
+                    onClick={showSamandehi}
+                    title="لوگو ساماندهی"
+                    className="h-44 w-full cursor-pointer"
+                  >
                     <Image
                       src={"/images/samandehi.svg"}
                       width={127}
@@ -203,14 +215,14 @@ const Footer = () => {
                       height={127}
                       alt="samandehi logo"
                     />
-                  </a>
+                  </div>
                 </SwiperSlide>
                 {/* zarinpal */}
                 <SwiperSlide>
                   <div
                     onClick={showZPTrust}
                     title=" زرین پال - دروازه پرداخت معتبر"
-                    className="h-44 w-full"
+                    className="h-44 w-full cursor-pointer"
                   >
                     <Image
                       src={"/images/zaringPal.svg"}
@@ -225,19 +237,24 @@ const Footer = () => {
 
                 {/* namad */}
                 <SwiperSlide>
-                  <a target="_blank" title="اینماد" className="h-44 w-full">
+                  <a
+                    referrerPolicy="origin"
+                    target="_blank"
+                    href="https://trustseal.enamad.ir/?id=320551&amp;Code=NjTXHrWyPwwqD8nMIfVW"
+                    title="اینماد"
+                    className="h-44 w-full"
+                  >
                     <Image
                       src={"/images/enamad_ico.png"}
                       width={127}
                       loading="lazy"
                       height={127}
                       className="h-[127px] w-full"
-                      alt="zarinpal logo"
+                      alt="enamad logo"
                     />
                   </a>
                 </SwiperSlide>
-              <div className="swiper-pagination" id="footer-pagination"></div>
-
+                <div className="swiper-pagination" id="footer-pagination"></div>
               </Swiper>
             </div>
           </div>

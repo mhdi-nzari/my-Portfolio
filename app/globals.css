@@ -190,8 +190,8 @@ section {
 }
 
 
-#footer-pagination .swiper-pagination-bullet {
-  padding: 0px 10px;
+#footer-pagination span.swiper-pagination-bullet {
+  padding: 0px 8px;
   border-radius: 3px;
   background-color: white;
   opacity: 1;
@@ -200,4 +200,5 @@ section {
   }
 #footer-pagination  .swiper-pagination-bullet.swiper-pagination-bullet-active{
 background-color: #4D8AE5 !important;
+padding: 0px 10px;
 }
