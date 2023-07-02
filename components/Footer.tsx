@@ -5,10 +5,13 @@ import Newsletter from "./Newsletter";
 import Link from "next/link";
 import { footerLinks } from "@/constants";
 
-import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
+import SwiperCore, { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 // Import Swiper styles
 import "swiper/css";
+import 'swiper/css/pagination';
+
 import Image from "next/image";
 SwiperCore.use([Autoplay, Pagination]);
 
@@ -175,12 +178,16 @@ const Footer = () => {
             <p className="pb-5 text-right text-lg font-semibold text-white">
               مجوزها
             </p>
-            <div className="h-40 w-40 rounded-2xl bg-[#16191B] p-3">
+            <div className="h-[180px] w-40 rounded-2xl bg-[#16191B] p-3">
               <Swiper
                 modules={[Autoplay, Pagination]}
                 spaceBetween={50}
                 slidesPerView={1}
                 centeredSlides={true}
+                pagination={{
+                  clickable: true,
+                  el: ".swiper-pagination",
+                }}
                 autoplay={{
                   delay: 4000,
                   disableOnInteraction: false,
@@ -229,6 +236,8 @@ const Footer = () => {
                     />
                   </a>
                 </SwiperSlide>
+              <div className="swiper-pagination" id="footer-pagination"></div>
+
               </Swiper>
             </div>
           </div>
@@ -362,7 +371,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-grey-900 px-7 py-6 text-center text-xs text-white ">
-      زندگی مثل کدنویسی هست هر چه ساده تر باشه  ، بیشترین کارایی رو خواهد داشت . پس بیایید کدهامون رو ساده و قابل فهم بنویسیم تا همه بتونن به کدهامون لبخند بزنن و از نتایجشون لذت ببرن ❤️
+        زندگی مثل کدنویسی هست هر چه ساده تر باشه ، بیشترین کارایی رو خواهد داشت
+        . پس بیایید کدهامون رو ساده و قابل فهم بنویسیم تا همه بتونن به کدهامون
+        لبخند بزنن و از نتایجشون لذت ببرن ❤️
       </div>
     </footer>
   );

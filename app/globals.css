@@ -190,3 +190,14 @@ section {
 }
 
 
+#footer-pagination .swiper-pagination-bullet {
+  padding: 0px 10px;
+  border-radius: 3px;
+  background-color: white;
+  opacity: 1;
+  transition: all 0.5s ease-in;
+  height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,6px));
+  }
+#footer-pagination  .swiper-pagination-bullet.swiper-pagination-bullet-active{
+background-color: #4D8AE5 !important;
+}
