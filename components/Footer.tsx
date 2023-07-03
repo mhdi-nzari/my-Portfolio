@@ -40,7 +40,7 @@ const Footer = () => {
   var jalaliYear = gregorianToJalaliYear(gregorianYear);
 
   return (
-    <footer className="relative mt-48 bg-slate-900">
+    <footer className="relative mt-48 bg-footer bg-center bg-cover">
       <Newsletter />
       <div className="container  grid w-full grid-cols-1 pb-10 pt-60 md:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-wrap gap-4">

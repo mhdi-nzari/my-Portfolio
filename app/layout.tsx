@@ -27,7 +27,6 @@ const dana = localFont({
       style: "normal",
     },
 
-  
     {
       path: "../public/font/yekan-bkh/woff2/YekanBakhFaNum-Bold.woff2",
       weight: "600",
@@ -43,8 +42,8 @@ const dana = localFont({
 });
 export const metadata = {
   title: {
-    default: "وبسایت مهدی نظری",
-    template: "%s | وبسایت مهدی نظری",
+    default: "مهدی نظری - برنامه نویس فرانت اند",
+    template: "%s | مهدی نظری - برنامه نویس فرانت اند",
   },
   description:
     "مهدی نظری هستم برنامه نویس فرانت اند که توی این حوضه یادمیگیره و آموزش هاش رو انتقال میده",
@@ -62,9 +61,14 @@ export default function RootLayout({
         <meta name="keywords" content="titla, meta, nextjs" />
         <meta name="author" content="Syamlal CM" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="keywords"
+          content="html , css , frontend , dev , developer , مهدی نظری , react , nextjs , reactjs , javascript , js"
+        />
+        meta:a
       </Head>
       <body
-        className={`relative mx-auto oveflow-hidden max-w-screen-2xl ${dana.variable} font-dana`}
+        className={`oveflow-hidden relative mx-auto max-w-screen-2xl ${dana.variable} font-dana`}
       >
         <Navbar />
         {children}

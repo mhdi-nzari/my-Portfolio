@@ -62,7 +62,7 @@ module.exports = {
         30: "30px",
         31: "31px",
         32: "32px",
-        34: "34px",
+      34: "34px",
         56: "56px",
         68: "68px",
       },
@@ -72,8 +72,9 @@ module.exports = {
         offer: "url('/images/offer_bg.png')",
         circle_empty: "url('/images/circle_empty.svg')",
         instagram_banner: "url('/images/instagramBg.svg')",
-     portfolio_item: "url('/images/portfo.svg')",
-     newsletter: "url('/images/backgroudNewsleetter.svg')",
+        portfolio_item: "url('/images/portfo.svg')",
+        newsletter: "url('/images/backgroudNewsleetter.svg')",
+        footer: "url('/images/footerbackground.svg')",
       },
       boxShadow: {
         default: "20px 40px 80px 0px rgba(45, 51, 81, 0.08);",
@@ -82,7 +83,6 @@ module.exports = {
   },
 
   plugins: [
-    require("@tailwindcss/line-clamp"),
     require("@tailwindcss/aspect-ratio"),
   ],
 };
