@@ -14,7 +14,7 @@ const TitleBar = ({
   return (
     <div className="relative z-10 flex w-full flex-col items-center py-11">
       <h3
-        className={`flex text-center text-2xl  font-[950] text-grey-800   min-[368px]:text-4xl ${
+        className={`flex text-center font-[950] text-grey-800  text-4xl ${
           sufixIsBreak ? "flex-col gap-2" : "flex-row"
         }`}
       >

@@ -7,7 +7,7 @@ import Image from "next/image";
 const Offer = () => {
   return (
     <section className="container">
-      <div className="lg:max-w-ful relative mx-auto flex w-full max-w-md flex-col items-center rounded-xl bg-offer bg-cover  bg-center  bg-no-repeat pb-5 px-4 pt-14 ">
+      <div className="lg:max-w-ful relative mx-auto flex w-full max-w-md flex-col items-center rounded-3xl bg-offer bg-cover  bg-center  bg-no-repeat pb-5 px-4 pt-14 ">
         <p className="pb-4 pt-3 text-center text-20 font-[990] text-white sm:text-2xl">
           تخفیف ویژه دوره آموزش برنامه نویسی
         </p>
@@ -25,7 +25,7 @@ const Offer = () => {
         </div>
 
         {/*  image element */}
-        <div className="absolute -right-0 -top-12">
+        <div className="absolute right-5 -top-12">
           <Image
             height="176"
             width="175"

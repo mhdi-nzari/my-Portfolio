@@ -18,7 +18,7 @@ const CustomButton = ({
     return (
       <>
         <button
-          className={`custom__btn group outline outline-2 outline-offset-2 outline-transparent hover:-translate-y-1   ${
+          className={`custom__btn group outline outline-2 outline-offset-2 gap-2 outline-transparent hover:-translate-y-1   ${
             containerStyles ? containerStyles : ""
           }`}
           type={btnType || "button"}
@@ -51,7 +51,7 @@ const CustomButton = ({
           {renderButtonContent()}
         </Link>
       ) : (
-        <div className="w-auto">{renderButtonContent()}</div>
+        <div className="w-full">{renderButtonContent()}</div>
       )}
     </>
   );

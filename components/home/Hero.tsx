@@ -30,11 +30,11 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-col items-center pb-7 pt-5 lg:items-start">
-            <p className="whitespace-nowrap pb-5 text-center text-24  font-black text-primary sm:text-34 md:text-56">
+            <p className="whitespace-nowrap pb-5 text-center text-3xl  font-[950] text-primary sm:text-34 md:text-56">
               یه برنامه نویس شاد و پر انرژی
             </p>
             <div className="relative w-fit border-2 border-secondary px-5 py-3">
-              <p className="whitespace-nowrap text-center text-24 font-[950] text-secondary sm:text-32 md:text-56">
+              <p className="whitespace-nowrap text-center text-3xl font-[950] text-secondary sm:text-32 md:text-56">
                 توسعه وب و رابط کاربری
               </p>
 
@@ -47,7 +47,7 @@ const Hero = () => {
               <span className="absolute -bottom-2 -right-2 h-4 w-4 border-2 border-secondary bg-white"></span>
             </div>
 
-            <p className="pt-7 text-center  text-sm font-medium  leading-8 text-grey-500 sm:text-18 lg:text-right">
+            <p className="px-6 pt-7  text-center text-sm  font-medium leading-6 text-grey-500 sm:text-18 md:px-0 lg:text-right">
               گاهی اوقات
               <span className="inline-flex px-0.5 font-semibold text-primary">
                 رابط کاربری
@@ -86,7 +86,7 @@ const Hero = () => {
           </div>
 
           <div className="flex  w-full items-center py-7 md:pt-2 lg:justify-between ">
-            <div className="flex w-full flex-col items-center gap-7 px-5 sm:flex-row sm:justify-start md:px-0">
+            <div className="flex w-full flex-col items-center gap-4 px-10 sm:flex-row sm:justify-start md:px-0">
               <CustomButton
                 textStyles="text-white whitespace-nowrap text-16 font-normal pl-2"
                 containerStyles="lg:px-[20px] xl:px-[31px] py-4 px-8 bg-primary w-full mx-0 lg:w-fit hover:outline-primary"
@@ -119,15 +119,24 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="h-auto w-full  md:w-5/12">
-          <Image
-            src={"/images/hero_image.png"}
+        <div className="w-full h-auto">
+          <picture >
+            <source media="(min-width: 1024px)" src="/images/hero_image.png" />
+            <source media="(max-width: 768px)" src="/images/hero_image.png" />
+            <source
+              media="(min-width: 768px) and (max-width: 1024px)"
+              src="/images/hero_image.png"
+            />
+            <img className="mx-auto" src="/images/hero_sm.svg" alt="mahdi nazari hero" />
+          </picture>
+          {/* <Image
+            src={""}
             className="mx-auto "
             width={465}
             loading="lazy"
             height={433}
             alt="introduction mahdi nazari"
-          />
+          /> */}
         </div>
       </div>
     </section>

@@ -17,15 +17,15 @@ const Achievement = () => {
               >
                 <Image
                   src={item.icon}
-                  width={27}
-                  height={27}
+                  width={36}
+                  height={36}
                   alt={item.title}
                   loading="lazy"
                 />
               </div>
 
               <figcaption className="mt-5 flex flex-col items-center">
-                <p className="pb-2 text-center  text-xl font-semibold text-primary line-clamp-2">
+                <p className="pb-2 text-center  text-3xl font-semibold text-primary line-clamp-2">
                   <CouteUpHook startNum={0} finishNum={item.number} />
 
                   {item?.titleOfNumber}

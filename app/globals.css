@@ -166,7 +166,7 @@ section {
 }
 
 
-/* Firefox */
+/* ==================================== Srcrol-Bar ==================================== */
 * {
   scrollbar-width: thin;
   scrollbar-color: #b5b8ff;
@@ -179,15 +179,17 @@ section {
 
 *::-webkit-scrollbar-track {
   background:  #d8d9ff;;
-  
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color:#262C9C;
-  border-radius: 14px;
+  border-radius: 3px;
   border: 3px solid #262C9C;
 }
+
+/* ==================================== END Srcrol-Bar ==================================== */
+
 
 
 #footer-pagination span.swiper-pagination-bullet {
