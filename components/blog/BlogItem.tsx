@@ -104,7 +104,7 @@ const BlogItem = ({
               {author}
             </span>
           </p>
-          <Link href={link} className="flex items-center">
+          <Link href={link} className="flex items-center transition-all duration-500  group-hover:-rotate-45 ">
             <button>
               <svg
                 width="30"

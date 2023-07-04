@@ -51,7 +51,7 @@ const CustomButton = ({
           {renderButtonContent()}
         </Link>
       ) : (
-        <div className="w-full">{renderButtonContent()}</div>
+        <div className="">{renderButtonContent()}</div>
       )}
     </>
   );
