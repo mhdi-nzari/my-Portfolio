@@ -15,7 +15,7 @@ const Services = () => {
       />
 
       {/* service item */}
-      <div className="mt-8 flex w-full flex-wrap justify-center  gap-x-5 gap-y-16">
+      <div className="mt-8 flex w-full  flex-wrap justify-center  gap-x-5 gap-y-16">
         {servicesItem.slice(0, 2).map((item, i) => (
           <>
           
@@ -53,7 +53,7 @@ const Services = () => {
             leftIcon="/images/icon/arrow_left_white.svg"
             textStyles="text-white text-base"
             btnType={"button"}
-            containerStyles={"bg-primary mx-auto !px-[17px] py-[16px]"}
+            containerStyles={"bg-primary mx-auto px-8 py-[16px] hover:outline-primary"}
           />
         </div>
     </section>
