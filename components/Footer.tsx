@@ -311,7 +311,7 @@ const Footer = () => {
               </div>
 
               <div className="flex flex-col">
-                <p className=" pb-3 text-base text-gray-200 font-bold text-right line-clamp-1">
+                <p className=" pb-3 text-base text-gray-200 font-bold text-right line-clamp-1 py-3">
                   مزایا و معایب فریلنسری چیست؟
                 </p>
               </div>
