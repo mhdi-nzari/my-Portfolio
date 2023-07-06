@@ -13,6 +13,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import Image from "next/image";
+import WaveformFooter from "./WaveformFooter";
 SwiperCore.use([Autoplay, Pagination]);
 
 const Footer = () => {
@@ -264,7 +265,7 @@ const Footer = () => {
             <p className="pb-5 text-right text-lg font-semibold text-white">
               پادکست هفته
             </p>
-            <div className="flex flex-col rounded-2xl bg-[rgba(19,22,24,0.60)] p-4">
+            <div className="flex flex-col rounded-2xl bg-[rgba(19,22,24,0.60)] p-6">
               <div className="flex w-full flex-wrap justify-between">
                 <div className="flex items-center gap-2 rounded-full bg-[#292A2C] px-3 py-2">
                   <span className="">
@@ -276,8 +277,8 @@ const Footer = () => {
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
                         d="M8 1.33325C6.52724 1.33325 5.33333 2.52716 5.33333 3.99992V7.99992C5.33333 9.47268 6.52724 10.6666 8 10.6666C9.47276 10.6666 10.6667 9.47268 10.6667 7.99992V3.99992C10.6667 2.52716 9.47276 1.33325 8 1.33325ZM4 6.83325C4.27614 6.83325 4.5 7.05711 4.5 7.33325V7.99992C4.5 9.93292 6.067 11.4999 8 11.4999C9.933 11.4999 11.5 9.93292 11.5 7.99992V7.33325C11.5 7.05711 11.7239 6.83325 12 6.83325C12.2761 6.83325 12.5 7.05711 12.5 7.33325V7.99992C12.5 10.3162 10.75 12.2237 8.5 12.4725V13.6666H10C10.2761 13.6666 10.5 13.8904 10.5 14.1666C10.5 14.4427 10.2761 14.6666 10 14.6666H6C5.72386 14.6666 5.5 14.4427 5.5 14.1666C5.5 13.8904 5.72386 13.6666 6 13.6666H7.5V12.4725C5.25002 12.2237 3.5 10.3162 3.5 7.99992V7.33325C3.5 7.05711 3.72386 6.83325 4 6.83325Z"
                         fill="#4D8AE5"
                       />
@@ -286,7 +287,7 @@ const Footer = () => {
                   <p className="text-xs font-normal text-[#4D8AE5]">پادکست</p>
                 </div>
                 <Link href={""} className="flex items-center gap-2">
-                  <p className=" text-xs font-normal text-grey-300">
+                  <p className=" text-base font-normal text-grey-300">
                     مشاهده همه
                   </p>
                   <span>
@@ -311,9 +312,10 @@ const Footer = () => {
               </div>
 
               <div className="flex flex-col">
-                <p className=" pb-3 text-base text-gray-200 font-bold text-right line-clamp-1 py-3">
+                <p className=" line-clamp-1 pt-5 pb-5 text-right text-base font-bold text-gray-200">
                   مزایا و معایب فریلنسری چیست؟
                 </p>
+                <WaveformFooter />
               </div>
             </div>
           </div>
