@@ -45,7 +45,7 @@ const MobileMenu: React.FC<activeMenyProps> = ({
     <>
       <div
         ref={menuRef}
-        className={`absolute top-28 left-0 right-0 mx-auto w-[90%] h-[500px] p-10 bg-white shadow-sm rounded-tr-[24px] rounded-tl-[24px]  block lg:hidden  transition-all duration-500   ${
+        className={`absolute top-28 left-0 right-0 mx-auto w-[90%] h-[500px] p-10 bg-white shadow-sm rounded-[24px]  block lg:hidden  transition-all duration-500   ${
           activeMenu
             ? "-translate-y-0 opacity-100 visible "
             : "-translate-y-5 opacity-0 invisible"

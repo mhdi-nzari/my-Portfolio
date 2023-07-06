@@ -287,7 +287,7 @@ const Footer = () => {
                   <p className="text-xs font-normal text-[#4D8AE5]">پادکست</p>
                 </div>
                 <Link href={""} className="flex items-center gap-2">
-                  <p className=" text-base font-normal text-grey-300">
+                  <p className=" text-base font-normal text-grey-300 ">
                     مشاهده همه
                   </p>
                   <span>

@@ -10,9 +10,9 @@ const Achievement = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center justify-center gap-10">
         {achievementItem &&
           achievementItem.map((item, i) => (
-            <figure key={i} className="flex w-full flex-col items-center">
+            <figure key={i} className="flex  flex-1 flex-col md:flex-row items-center md:gap-5">
               <div
-                className={`flex w-fit rounded-xl p-5`}
+                className={`flex  rounded-xl p-5`}
                 style={{ backgroundColor: `${item.colorIcon}` }}
               >
                 <Image
@@ -21,10 +21,11 @@ const Achievement = () => {
                   height={36}
                   alt={item.title}
                   loading="lazy"
+                  className="w-full h-full"
                 />
               </div>
 
-              <figcaption className="mt-5 flex flex-col items-center">
+              <figcaption className="mt-5 flex flex-col items-center  lg:items-start">
                 <p className="pb-2 text-center  text-3xl font-semibold text-primary line-clamp-2">
                   <CouteUpHook startNum={0} finishNum={item.number} />
 

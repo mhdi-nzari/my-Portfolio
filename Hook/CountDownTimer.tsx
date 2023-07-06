@@ -38,7 +38,7 @@ const CountDownTimer = () => {
   }, []);
 
   return (
-    <div className="flex w-full justify-center gap-1">
+    <div className="flex w-full justify-center gap-1 md:w-fit">
       {/* seconds */}
       <div className="flex  flex-col items-center">
         <div
@@ -50,7 +50,7 @@ const CountDownTimer = () => {
             height: "45px",
           }}
         >
-          <p className="flex items-center justify-center px-4 py-3 text-2xl font-medium text-white">
+          <p className="flex items-center justify-center mx-4 my-3 text-2xl font-medium text-white">
             {seconds}
           </p>
         </div>
@@ -71,7 +71,7 @@ const CountDownTimer = () => {
             height: "45px",
           }}
         >
-          <p className="flex items-center justify-center px-4 py-3 text-2xl font-medium text-white">
+          <p className="flex items-center justify-center mx-4 py-3 text-2xl font-medium text-white">
             {minutes}
           </p>
         </div>
@@ -91,7 +91,7 @@ const CountDownTimer = () => {
             height: "45px",
           }}
         >
-          <p className="flex items-center justify-center px-4 py-3 text-2xl font-medium text-white">
+          <p className="flex items-center justify-center mx-4 py-3 text-2xl font-medium text-white">
             {hours}
           </p>
         </div>
@@ -112,7 +112,7 @@ const CountDownTimer = () => {
             height: "45px",
           }}
         >
-          <p className="flex items-center justify-center px-4 py-3 text-2xl font-medium text-white">
+          <p className="flex items-center justify-center mx-4 py-3 text-2xl font-medium text-white">
             {days}
           </p>
         </div>

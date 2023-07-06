@@ -18,7 +18,7 @@ const CustomButton = ({
     return (
       <>
         <button
-          className={`custom__btn group outline outline-2 outline-offset-2 gap-2 outline-transparent hover:-translate-y-1   ${
+          className={`custom__btn group outline outline-2 outline-offset-2 gap-2 md:whitespace-nowrap outline-transparent hover:-translate-y-1   ${
             containerStyles ? containerStyles : ""
           }`}
           type={btnType || "button"}
