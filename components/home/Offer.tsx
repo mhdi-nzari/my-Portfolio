@@ -5,21 +5,21 @@ import Image from "next/image";
 const Offer = () => {
   return (
     <section className="container">
-      <div className="relative mx-auto flex w-full flex-col items-center rounded-3xl bg-offer bg-cover bg-center  bg-no-repeat  px-4 pb-5 pt-14 md:flex-row lg:justify-between lg:px-5 lg:!py-5 xl:pl-16 xl:pr-56">
-        <p className="whitespace-nowrap pb-4 pt-3 text-center lg:text-3xl font-[990] text-white text-2xl">
+      <div className="relative mx-auto flex w-full flex-col items-center rounded-3xl bg-offer bg-cover bg-center  bg-no-repeat  px-4 pb-5 pt-14 md:flex-row lg:justify-between lg:px-5 md:!py-5 xl:pl-16 xl:pr-56 md:justify-between">
+        <p className="md:whitespace-nowrap pb-4 pt-3 text-2xl text-center md:text-base 2xl:text-3xl font-[990] text-white">
           تخفیف ویژه دوره آموزش برنامه نویسی
         </p>
 
         <CountDownTimer />
 
-        <div className="w-full pt-4 md:w-fit md:p-0">
+        <div className="w-full pt-4 md:w-fit lg:p-0">
           <CustomButton
             title="مشاهده دوره"
             leftIcon="/images/icon/arrow_left_white.svg"
-            textStyles="text-white text-base"
+            textStyles="text-white text-base md:!text-xs"
             btnType={"button"}
             containerStyles={
-              "bg-secondary mx-auto !px-[17px] py-[16px] hover:outline-secondary"
+              "bg-secondary mx-auto px-[17px] py-[16px] hover:outline-secondary md:!px-2 md:py-2 "
             }
           />
         </div>

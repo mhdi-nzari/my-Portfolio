@@ -28,7 +28,7 @@ const SwiperWrapper = () => {
     if (navigationNextRef.current && navigationPrevRef.current) {
       Swiper.use([Autoplay, Navigation]);
 
-      new Swiper(".swiper-container", {
+      new Swiper(".swiper-product", {
         spaceBetween: 50,
         slidesPerView: 1,
         centeredSlides: true,
@@ -37,6 +37,26 @@ const SwiperWrapper = () => {
           delay: 4000,
           disableOnInteraction: false,
         },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          468: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+          1200: {
+            slidesPerView: 4,
+          },
+    
+        },
+
         navigation: {
           prevEl: navigationPrevRef.current,
           nextEl: navigationNextRef.current,
@@ -50,6 +70,7 @@ const SwiperWrapper = () => {
   }, []);
 
   return (
+    <>
     <SwiperSlide>
       <CategoryItem
         title={"دوره متخصص ریکت و ریداکس"}
@@ -66,6 +87,74 @@ const SwiperWrapper = () => {
         productLink={"/shop/id"}
       />
     </SwiperSlide>
+
+    <SwiperSlide>
+      <CategoryItem
+        title={"دوره متخصص ریکت و ریداکس"}
+        image={"/images/product.svg"}
+        student={68}
+        star={4.9}
+        isRecord={true}
+        courseTime={"۵۵:۴۵:۰۰"}
+        releasePlatform={"اسپات پلیر"}
+        epizodNumber={"۵۰۰ درس"}
+        price={"2,999,000"}
+        offer={"50%"}
+        priceOffer={"1,499,000"}
+        productLink={"/shop/id"}
+      />
+    </SwiperSlide>
+    <SwiperSlide>
+      <CategoryItem
+        title={"دوره متخصص ریکت و ریداکس"}
+        image={"/images/product.svg"}
+        student={68}
+        star={4.9}
+        isRecord={true}
+        courseTime={"۵۵:۴۵:۰۰"}
+        releasePlatform={"اسپات پلیر"}
+        epizodNumber={"۵۰۰ درس"}
+        price={"2,999,000"}
+        offer={"50%"}
+        priceOffer={"1,499,000"}
+        productLink={"/shop/id"}
+      />
+    </SwiperSlide>
+    <SwiperSlide>
+      <CategoryItem
+        title={"دوره متخصص ریکت و ریداکس"}
+        image={"/images/product.svg"}
+        student={68}
+        star={4.9}
+        isRecord={true}
+        courseTime={"۵۵:۴۵:۰۰"}
+        releasePlatform={"اسپات پلیر"}
+        epizodNumber={"۵۰۰ درس"}
+        price={"2,999,000"}
+        offer={"50%"}
+        priceOffer={"1,499,000"}
+        productLink={"/shop/id"}
+      />
+    </SwiperSlide>
+    <SwiperSlide>
+      <CategoryItem
+        title={"دوره متخصص ریکت و ریداکس"}
+        image={"/images/product.svg"}
+        student={68}
+        star={4.9}
+        isRecord={true}
+        courseTime={"۵۵:۴۵:۰۰"}
+        releasePlatform={"اسپات پلیر"}
+        epizodNumber={"۵۰۰ درس"}
+        price={"2,999,000"}
+        offer={"50%"}
+        priceOffer={"1,499,000"}
+        productLink={"/shop/id"}
+      />
+    </SwiperSlide>
+
+
+    </>
   );
 };
 
@@ -95,14 +184,14 @@ const NewsestCat = () => {
         </div>
       </div>
       <div className="mt-11 w-full pb-16">
-        <div className="swiper-container">
+        <div className="swiper-product">
           <div className="swiper-wrapper">
             <SwiperWrapper />
           </div>
         </div>
         {/* Navigation buttons */}
         <div className="flex w-full items-center justify-center gap-5 pt-10">
-          <button >
+          <button>
             <svg
               width="56"
               height="56"
@@ -119,7 +208,7 @@ const NewsestCat = () => {
               />
             </svg>
           </button>
-          <button >
+          <button>
             <svg
               width="56"
               height="56"

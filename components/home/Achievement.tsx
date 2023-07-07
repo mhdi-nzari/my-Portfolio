@@ -7,7 +7,7 @@ import React from "react";
 const Achievement = () => {
   return (
     <section className="container">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center justify-center gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-10">
         {achievementItem &&
           achievementItem.map((item, i) => (
             <figure key={i} className="flex  flex-1 flex-col md:flex-row items-center md:gap-5">
