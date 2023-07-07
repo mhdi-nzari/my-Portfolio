@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useState } from "react";
-import { Navigation, A11y, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -28,29 +28,21 @@ const NewestSlider = () => {
   return (
     <>
       <Swiper
-        modules={[Autoplay, A11y, Navigation]}
-        spaceBetween={50}
+        modules={[Autoplay, Navigation]}
+        spaceBetween={20}
         slidesPerView={1}
-        loop
         centeredSlides={true}
-        className="p-10"
+        className="py-20 md:pt-0"
+        loop={true}
         breakpoints={{
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 100,
+          576: {
+            // width: 576,
+            slidesPerView: 2,
           },
           768: {
+            // width: 768,
             slidesPerView: 2,
-            spaceBetween: 150,
-          },
-
-          992: {
-            slidesPerView: 2,
-            spaceBetween: 100,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 100,
+            spaceBetween: 20,
           },
         }}
         dir="rtl"

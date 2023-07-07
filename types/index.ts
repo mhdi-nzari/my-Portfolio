@@ -29,6 +29,7 @@ export interface titleBarProps {
   sufixTitle: string;
   sufixIsBreak?: boolean;
   bgPattern?: string;
+  textStyle?:string
 }
 
 export interface categoryItem {

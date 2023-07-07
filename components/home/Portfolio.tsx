@@ -5,8 +5,8 @@ import LatestPortfolio from "../portfolio/category/LatestPortfolio";
 
 const Portfolio = () => {
   return (
-    <section className="container bg-circle_empty bg-center  bg-no-repeat">
-      <div className="flex  flex-col">
+    <section className="container bg-circle_empty bg-center  bg-no-repeat flex flex-col lg:flex-row">
+      <div className="flex  flex-col lg:w-5/12">
         <TitleBar
           bgPattern="/images/icon/outline-monitor.svg"
           sufixIsBreak
@@ -27,7 +27,7 @@ const Portfolio = () => {
           />
         </div>
       </div>
-      <div className="mt-11 w-full">
+      <div className="mt-11 w-full lg:w-5/12">
         <LatestPortfolio />
       </div>
     </section>

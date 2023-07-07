@@ -121,13 +121,16 @@ const Hero = () => {
 
         <div className="w-full h-auto">
           <picture >
-            <source media="(min-width: 1024px)" src="/images/hero_image.png" />
-            <source media="(max-width: 768px)" src="/images/hero_image.png" />
+          
+            <source
+              media="(min-width: 0px) and (max-width: 768px)"
+              src="/images/hero_sm.svg"
+            />
             <source
               media="(min-width: 768px) and (max-width: 1024px)"
               src="/images/hero_image.png"
             />
-            <img className="mx-auto" src="/images/hero_sm.svg" alt="mahdi nazari hero" />
+            <img className="mx-auto" src="/images/hero_image.svg" alt="mahdi nazari hero" />
           </picture>
           {/* <Image
             src={""}
