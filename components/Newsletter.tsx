@@ -16,7 +16,7 @@ const Newsletter = () => {
   };
   return (
     <div className="w-[calc(100vh_-_20px] absolute left-0 right-0 top-0 -translate-y-1/2  mx-5 rounded-2xl bg-newsletter bg-cover bg-center bg-no-repeat">
-      <div className="flex flex-col items-center justify-center px-4 pt-5">
+      <div className="flex flex-col md:flex-row items-center justify-center px-4 pt-5">
         <p className="text-center text-2xl font-black text-white">
           خبرنامه هفتگی برنامه نویسان
         </p>
