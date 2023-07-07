@@ -5,7 +5,8 @@ import Newsletter from "./Newsletter";
 import Link from "next/link";
 import { footerLinks } from "@/constants";
 
-import SwiperCore, { Autoplay, Pagination } from "swiper";
+import { Autoplay, Pagination } from 'swiper/modules';
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -14,7 +15,6 @@ import "swiper/css/pagination";
 
 import Image from "next/image";
 import WaveformFooter from "./WaveformFooter";
-SwiperCore.use([Autoplay, Pagination]);
 
 const Footer = () => {
   const showZPTrust = () => {
@@ -229,8 +229,9 @@ const Footer = () => {
                       src={"/images/zaringPal.svg"}
                       width={127}
                       loading="lazy"
+                      
                       height={127}
-                      className="h-[127px] w-full"
+                      className="h-32 w-full object-cover"
                       alt="zarinpal logo"
                     />
                   </div>
@@ -312,10 +313,10 @@ const Footer = () => {
               </div>
 
               <div className="flex flex-col">
-                <p className=" line-clamp-1 pt-5 pb-5 text-right text-base font-bold text-gray-200">
+                <p className=" line-clamp-1 pb-5 pt-5 text-right text-base font-bold text-gray-200">
                   مزایا و معایب فریلنسری چیست؟
                 </p>
-                <WaveformFooter />
+                {/* <WaveformFooter /> */}
               </div>
             </div>
           </div>

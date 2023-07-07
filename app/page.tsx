@@ -26,7 +26,7 @@ export default function Home() {
         <InstaBanner />
         <Portfolio />
         <Blog />
-        <Comment/>
+        <Comment />
       </main>
     </>
   );

@@ -15,15 +15,14 @@ const MobileMenu: React.FC<activeMenyProps> = ({
   let menuRef = useRef<HTMLDivElement | null>(null);
 
   const handleClickOutside = (event: MouseEvent | TouchEvent) => {
-    const isOpen = activeMenu;
-
+   
     if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
       setActiveMenu(false);
     }
   };
 
   useEffect(() => {
-    const handleClickOutside = (event:any) => {
+    const handleClickOutside = (event: any) => {
       if (
         menuClicked &&
         menuRef.current &&
@@ -39,7 +38,7 @@ const MobileMenu: React.FC<activeMenyProps> = ({
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
-  }, [menuClicked]);
+  }, [menuClicked, setActiveMenu, setMenuClicked]); 
 
   return (
     <>

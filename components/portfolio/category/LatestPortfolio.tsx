@@ -2,12 +2,13 @@
 
 import React, { useRef, useState } from "react";
 import CustomButton from "@/components/CustomButton";
-import SwiperCore, { Autoplay, Navigation } from "swiper";
+
+import { Navigation, Autoplay } from 'swiper/modules';
+
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import PortfolioItem from "./PortfolioItem";
-SwiperCore.use([Autoplay, Navigation]);
 
 const LatestPortfolio = () => {
   const navigationNextRef = useRef(null);

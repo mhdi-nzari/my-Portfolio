@@ -4,13 +4,13 @@ import CustomButton from "./CustomButton";
 
 const InstaBanner = () => {
   return (
-    <section className="g container relative z-10 w-full">
-      <div className="rounded-3xl bg-instagram_banner bg-cover bg-center px-3 pb-5 pt-20">
-        <p className="inline-block pb-4 text-center text-lg line-clamp-4 text-white">
+    <section className=" container relative z-10 w-full">
+      <div className="rounded-3xl bg-instagram_banner bg-cover bg-center px-3 pb-5 pt-20 flex flex-col md:flex-row">
+        <p className="inline-block pb-4 text-center text-lg line-clamp-4 text-white whitespace-nowrap">
           من هر روز کلی
           <a
             href="http://instagram.com/mhdi_nzari"
-            className="inline-block px-0.5 font-black"
+            className="inline-block px-0.5 font-black "
           >
             مطلب آموزشی جالب در اینستاگرام
           </a>

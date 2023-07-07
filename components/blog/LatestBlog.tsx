@@ -1,15 +1,15 @@
 "use client";
 
 import React, { useRef, useState } from "react";
-import CustomButton from "@/components/CustomButton";
-import SwiperCore, { Autoplay, Navigation } from "swiper";
+import { Autoplay, Navigation } from 'swiper/modules';
+
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import BlogItem from "./BlogItem";
-SwiperCore.use([Autoplay, Navigation]);
 
-const LatestBlog = () => {
+
+const NewestSlider = () => {
   const navigationNextRef = useRef(null);
   const navigationPrevRef = useRef(null);
 
@@ -114,4 +114,4 @@ const LatestBlog = () => {
   );
 };
 
-export default LatestBlog;
+export default NewestSlider;

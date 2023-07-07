@@ -19,7 +19,7 @@ const CategoryItem = ({
   student,
 }: categoryItem) => {
   return (
-    <figure className="group relative flex w-full flex-col rounded-[20px] bg-white p-4 shadow-default">
+    <figure className="group relative flex  flex-col rounded-[20px] w-full  max-w-md bg-white p-4 drop-shadow-lg">
       <Link href={productLink} className="aspect-h-9 aspect-w-13">
         <Image
           src={image}

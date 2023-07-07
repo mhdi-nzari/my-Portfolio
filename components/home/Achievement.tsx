@@ -26,8 +26,8 @@ const Achievement = () => {
               </div>
 
               <figcaption className="mt-5 flex flex-col items-center  lg:items-start">
-                <p className="pb-2 text-center  text-3xl font-semibold text-primary line-clamp-2">
-                  <CouteUpHook startNum={0} finishNum={item.number} />
+                <p className="pb-2 text-center  text-3xl font-semibold flex flex-wrap text-primary line-clamp-2">
+                  <CouteUpHook startNum={0} finishNum={item.number}  />
 
                   {item?.titleOfNumber}
                 </p>

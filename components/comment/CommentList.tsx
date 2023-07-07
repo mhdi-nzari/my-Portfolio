@@ -2,15 +2,17 @@
 
 import React, { useRef, useState } from "react";
 
-import SwiperCore, { Autoplay, Navigation, EffectCoverflow } from "swiper";
+
+
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 
 import CommentItem from "./CommentItem";
 import { commentItem } from "@/constants";
+import { Autoplay, EffectCoverflow, Navigation } from "swiper/modules";
 
-SwiperCore.use([Autoplay, Navigation]);
+
 
 const CommentList = () => {
   const navigationNextRef = useRef(null);

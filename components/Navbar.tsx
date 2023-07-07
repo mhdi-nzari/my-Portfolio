@@ -33,7 +33,7 @@ const Navbar = () => {
     <header
       ref={menuRef}
       className={`container z-40 w-screen transition-all  duration-500 ${
-        isHeaderFixed ? "fixed top-0 left-0 right-0 bg-white shadow-default  rounded-ee-2xl rounded-es-2xl" : "relative"
+        isHeaderFixed ? "fixed top-0 left-0 right-0 bg-white/50 backdrop-blur-2xl shadow-default  rounded-ee-2xl rounded-es-2xl" : "relative"
       }`}
     >
       <nav
@@ -55,7 +55,7 @@ const Navbar = () => {
           <CustomButton
             btnType="button"
             containerStyles="burger bg-primary  hover:bg-transparent !px-3 hover:border-primary "
-            textStyles="text-white font-normal group-hover:text-primary !text-12 sm:text-sm "
+            textStyles="text-white font-normal group-hover:text-primary !text-12 sm:text-sm hover:outline-primary"
             title="ثبت نام | ورود"
           />
           <button

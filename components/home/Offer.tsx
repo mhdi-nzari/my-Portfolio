@@ -16,10 +16,10 @@ const Offer = () => {
           <CustomButton
             title="مشاهده دوره"
             leftIcon="/images/icon/arrow_left_white.svg"
-            textStyles="text-white text-base md:!text-xs"
+            textStyles="text-white text-base md:text-xs"
             btnType={"button"}
             containerStyles={
-              "bg-secondary mx-auto px-[17px] py-[16px] hover:outline-secondary md:!px-2 md:py-2 "
+              "bg-secondary mx-auto px-[17px] py-[16px] hover:outline-secondary "
             }
           />
         </div>
