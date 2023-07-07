@@ -38,7 +38,7 @@ const CouteUpHook: React.FC<CouteUpHookProps> = ({ startNum, finishNum }) => {
 
   return (
     <>
-      <span className="px-0.5" {...containerProps} ref={countUpRef}>
+      <span className=" w-28 h-auto inline-block" {...containerProps} ref={countUpRef}>
         {startNum}
       </span>
     </>

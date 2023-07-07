@@ -18,7 +18,7 @@ const TitleBar = ({
           sufixIsBreak ? "flex-col gap-2" : "flex-row"
         }`}
       >
-        <span className="px-0.5 text-secondary">{sufixTitle}</span>
+        <span className="px-0.5 text-secondary ">{sufixTitle}</span>
 
         {title}
       </h3>

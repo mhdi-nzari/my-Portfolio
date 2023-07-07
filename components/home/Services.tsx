@@ -6,9 +6,9 @@ import CustomButton from "../CustomButton";
 
 const Services = () => {
   return (
-    <section className="container bg-circle_empty bg-center  bg-no-repeat">
+    <section className="container flex flex-col  bg-circle_empty bg-center bg-no-repeat">
       <TitleBar
-      bgPattern="/images/icon/flash.svg"
+        bgPattern="/images/icon/flash.svg"
         title="من"
         sufixTitle="خدمات تخصصی"
         desc="تو هرزمینه تخصص دارم و میتونم به کسب و کار شما کمک کنم خوشحال میشم حتما بهم پیام بده ."
@@ -18,16 +18,14 @@ const Services = () => {
       <div className="mt-8 flex w-full  flex-wrap justify-center  gap-x-5 gap-y-16">
         {servicesItem.slice(0, 2).map((item, i) => (
           <>
-          
-              <ServiceItem
-                key={i}
-                title={item.title}
-                desc={item.desc}
-                icon={item.icon}
-                backgroundIcon={item.colorIcon}
-                ContainerClass=""
-              />
-          
+            <ServiceItem
+              key={i}
+              title={item.title}
+              desc={item.desc}
+              icon={item.icon}
+              backgroundIcon={item.colorIcon}
+              ContainerClass=""
+            />
           </>
         ))}
 
@@ -47,15 +45,17 @@ const Services = () => {
         ))}
       </div>
 
-      <div className="w-full pt-12 mx-auto">
-          <CustomButton
-            title="اطلاعات بیشتر"
-            leftIcon="/images/icon/arrow_left_white.svg"
-            textStyles="text-white text-base"
-            btnType={"button"}
-            containerStyles={"bg-primary mx-auto px-8 py-[16px] hover:outline-primary"}
-          />
-        </div>
+      <div className="mx-auto block w-full pt-12 lg:hidden">
+        <CustomButton
+          title="اطلاعات بیشتر"
+          leftIcon="/images/icon/arrow_left_white.svg"
+          textStyles="text-white text-base"
+          btnType={"button"}
+          containerStyles={
+            "bg-primary mx-auto px-8 py-[16px] hover:outline-primary"
+          }
+        />
+      </div>
     </section>
   );
 };
