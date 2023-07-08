@@ -32,10 +32,11 @@ const Navbar = () => {
   return (
     <header
       ref={menuRef}
-      className={`container z-40 w-screen transition-all  duration-500 ${
-        isHeaderFixed ? "fixed top-0 left-0 right-0 bg-white/50 backdrop-blur-2xl shadow-default  rounded-ee-2xl rounded-es-2xl" : "relative"
-      }`}
+      className={`  w-screen transition-all  duration-500`}
     >
+      <div className={` ${
+        isHeaderFixed ? "container z-40 fixed top-0 left-0 right-0 bg-white/50 backdrop-blur-2xl shadow-default  rounded-ee-2xl rounded-es-2xl" : "relative"
+      }`}>
       <nav
         className={`flex items-center justify-between gap-x-5 ${
           isHeaderFixed ? "py-4" : "py-7"
@@ -99,6 +100,7 @@ const Navbar = () => {
         menuClicked={menuClicked}
         setMenuClicked={setMenuClicked}
       />
+      </div>
     </header>
   );
 };

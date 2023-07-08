@@ -43,9 +43,9 @@ const Footer = () => {
   return (
     <footer className="relative mt-48 bg-footer bg-cover bg-center">
       <Newsletter />
-      <div className="container  grid w-full grid-cols-5 pb-10 pt-60 ">
+      <div className="container  grid  grid-flow-row-dense w-full grid-cols-12 pb-10 pt-60  gap-5">
        
-          <div className="col-span-2">
+          <div className=" col-span-full lg:col-span-6 xl:col-span-5">
             <div className="flex  flex-col pb-8">
               <p className="pb-5 text-right text-lg font-semibold text-white">
                 من کی هستم ؟
@@ -82,7 +82,7 @@ const Footer = () => {
                         />
                       </svg>
                     </span>
-                    <p className=" text-base font-normal text-grey-300">
+                    <p className=" text-base font-normal text-grey-300 hover:text-white transition-all duration-300">
                       ایران،اصفهان،کاشان
                     </p>
                   </a>
@@ -116,7 +116,7 @@ const Footer = () => {
                         />
                       </svg>
                     </span>
-                    <p className=" text-base font-normal text-grey-300">
+                    <p className=" text-base font-normal text-grey-300 hover:text-white transition-all duration-300">
                       09162890084
                     </p>
                   </a>
@@ -153,7 +153,7 @@ const Footer = () => {
                         />
                       </svg>
                     </span>
-                    <p className=" text-base font-normal text-grey-300">
+                    <p className=" text-base font-normal text-grey-300 hover:text-white transition-all duration-300">
                       info@mahdi-nazari.ir
                     </p>
                   </a>
@@ -163,7 +163,7 @@ const Footer = () => {
           </div>
 
           {/* quick access */}
-          <div className="col-span-">
+          <div className="col-span-full md:col-span-6 lg:col-span-3 xl:col-span-2">
             <p className="pb-5 text-right text-lg font-semibold text-white">
               دسترسی سریع
             </p>
@@ -182,7 +182,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="flex flex-col gap-10 col-span-1">
+          <div className="flex flex-col gap-10 md:col-span-6 col-span-full lg:col-span-3  xl:col-span-2">
 
 
            {/* namad */}
@@ -190,7 +190,7 @@ const Footer = () => {
             <p className="pb-5 text-right text-lg font-semibold text-white">
               مجوزها
             </p>
-            <div className="h-[180px] w-40 rounded-2xl bg-[#16191B] p-3">
+            <div className="h-[180px] w-40 rounded-2xl bg-[#16191B] py-4 px-3">
               <Swiper
                 modules={[Autoplay, Pagination]}
                 spaceBetween={50}
@@ -226,7 +226,7 @@ const Footer = () => {
                   <div
                     onClick={showZPTrust}
                     title=" زرین پال - دروازه پرداخت معتبر"
-                    className="h-44 w-full cursor-pointer"
+                    className="h-auto w-full cursor-pointer"
                   >
                     <Image
                       src={"/images/zaringPal.svg"}
@@ -234,7 +234,7 @@ const Footer = () => {
                       loading="lazy"
                       
                       height={127}
-                      className="h-32 w-full object-cover"
+                      className=" w-20 mx-auto object-cover"
                       alt="zarinpal logo"
                     />
                   </div>
@@ -259,7 +259,7 @@ const Footer = () => {
                     />
                   </a>
                 </SwiperSlide>
-                <div className="swiper-pagination" id="footer-pagination"></div>
+                <div className="swiper-pagination py-2" id="footer-pagination"></div>
               </Swiper>
             </div>
           </div>
@@ -386,7 +386,7 @@ const Footer = () => {
 
           </div>
           {/* cast */}
-          <div className="col-span-1">
+          <div className=" col-span-full lg:col-span-6 xl:col-span-3">
             <p className="pb-5 text-right text-lg font-semibold text-white">
               پادکست هفته
             </p>
@@ -412,7 +412,7 @@ const Footer = () => {
                   <p className="text-xs font-normal text-[#4D8AE5]">پادکست</p>
                 </div>
                 <Link href={""} className="flex items-center gap-2">
-                  <p className=" text-base font-normal text-grey-300 ">
+                  <p className=" text-base font-normal text-grey-300 hover:text-white transition-all duration-300 ">
                     مشاهده همه
                   </p>
                   <span>
