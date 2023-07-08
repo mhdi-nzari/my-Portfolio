@@ -43,10 +43,10 @@ const Footer = () => {
   return (
     <footer className="relative mt-48 bg-footer bg-cover bg-center">
       <Newsletter />
-      <div className="container  grid w-full grid-cols-1 pb-10 pt-60 md:grid-cols-2 lg:grid-cols-4">
-        <div className="flex flex-wrap gap-4">
-          <div>
-            <div className="flex flex-1 flex-col pb-8">
+      <div className="container  grid w-full grid-cols-5 pb-10 pt-60 ">
+       
+          <div className="col-span-2">
+            <div className="flex  flex-col pb-8">
               <p className="pb-5 text-right text-lg font-semibold text-white">
                 من کی هستم ؟
               </p>
@@ -58,7 +58,7 @@ const Footer = () => {
                 داشتن یه راهنمای مطمئن برای مسیرشونه در کنار اون تو...
               </p>
             </div>
-            <div className="w-full flex-1">
+            <div className="w-full ">
               <ul className="flex w-full flex-col items-start [&>*]:mb-5">
                 <li className="w-full">
                   <a href="" className="flex w-full gap-2">
@@ -163,7 +163,7 @@ const Footer = () => {
           </div>
 
           {/* quick access */}
-          <div className="flex-1 ">
+          <div className="col-span-">
             <p className="pb-5 text-right text-lg font-semibold text-white">
               دسترسی سریع
             </p>
@@ -182,8 +182,11 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* namad */}
-          <div className="flex-1 ">
+          <div className="flex flex-col gap-10 col-span-1">
+
+
+           {/* namad */}
+           <div className="">
             <p className="pb-5 text-right text-lg font-semibold text-white">
               مجوزها
             </p>
@@ -261,67 +264,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* cast */}
-          <div className="w-full">
-            <p className="pb-5 text-right text-lg font-semibold text-white">
-              پادکست هفته
-            </p>
-            <div className="flex flex-col rounded-2xl bg-[rgba(19,22,24,0.60)] p-6">
-              <div className="flex w-full flex-wrap justify-between">
-                <div className="flex items-center gap-2 rounded-full bg-[#292A2C] px-3 py-2">
-                  <span className="">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M8 1.33325C6.52724 1.33325 5.33333 2.52716 5.33333 3.99992V7.99992C5.33333 9.47268 6.52724 10.6666 8 10.6666C9.47276 10.6666 10.6667 9.47268 10.6667 7.99992V3.99992C10.6667 2.52716 9.47276 1.33325 8 1.33325ZM4 6.83325C4.27614 6.83325 4.5 7.05711 4.5 7.33325V7.99992C4.5 9.93292 6.067 11.4999 8 11.4999C9.933 11.4999 11.5 9.93292 11.5 7.99992V7.33325C11.5 7.05711 11.7239 6.83325 12 6.83325C12.2761 6.83325 12.5 7.05711 12.5 7.33325V7.99992C12.5 10.3162 10.75 12.2237 8.5 12.4725V13.6666H10C10.2761 13.6666 10.5 13.8904 10.5 14.1666C10.5 14.4427 10.2761 14.6666 10 14.6666H6C5.72386 14.6666 5.5 14.4427 5.5 14.1666C5.5 13.8904 5.72386 13.6666 6 13.6666H7.5V12.4725C5.25002 12.2237 3.5 10.3162 3.5 7.99992V7.33325C3.5 7.05711 3.72386 6.83325 4 6.83325Z"
-                        fill="#4D8AE5"
-                      />
-                    </svg>
-                  </span>
-                  <p className="text-xs font-normal text-[#4D8AE5]">پادکست</p>
-                </div>
-                <Link href={""} className="flex items-center gap-2">
-                  <p className=" text-base font-normal text-grey-300 ">
-                    مشاهده همه
-                  </p>
-                  <span>
-                    <svg
-                      width="12"
-                      height="13"
-                      viewBox="0 0 12 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4.785 9.91006C4.69 9.91006 4.595 9.87506 4.52 9.80006L1.485 6.76506C1.34 6.62006 1.34 6.38006 1.485 6.23506L4.52 3.20006C4.665 3.05506 4.905 3.05506 5.05 3.20006C5.195 3.34506 5.195 3.58506 5.05 3.73006L2.28 6.50006L5.05 9.27006C5.195 9.41506 5.195 9.65506 5.05 9.80006C4.98 9.87506 4.88 9.91006 4.785 9.91006Z"
-                        fill="#CED2D6"
-                      />
-                      <path
-                        d="M10.25 6.875H1.835C1.63 6.875 1.46 6.705 1.46 6.5C1.46 6.295 1.63 6.125 1.835 6.125H10.25C10.455 6.125 10.625 6.295 10.625 6.5C10.625 6.705 10.455 6.875 10.25 6.875Z"
-                        fill="#CED2D6"
-                      />
-                    </svg>
-                  </span>
-                </Link>
-              </div>
-
-              <div className="flex flex-col">
-                <p className=" line-clamp-1 pb-5 pt-5 text-right text-base font-bold text-gray-200">
-                  مزایا و معایب فریلنسری چیست؟
-                </p>
-                {/* <WaveformFooter /> */}
-              </div>
-            </div>
-          </div>
-
-          <div className="w-full">
+          <div className="">
             <p className="pb-5 text-right text-lg font-semibold text-white">
               شبکه های اجتماعی
             </p>
@@ -439,7 +382,68 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-        </div>
+
+
+          </div>
+          {/* cast */}
+          <div className="col-span-1">
+            <p className="pb-5 text-right text-lg font-semibold text-white">
+              پادکست هفته
+            </p>
+            <div className="flex flex-col rounded-2xl bg-[rgba(19,22,24,0.60)] p-6">
+              <div className="flex w-full flex-wrap justify-between">
+                <div className="flex items-center gap-2 rounded-full bg-[#292A2C] px-3 py-2">
+                  <span className="">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M8 1.33325C6.52724 1.33325 5.33333 2.52716 5.33333 3.99992V7.99992C5.33333 9.47268 6.52724 10.6666 8 10.6666C9.47276 10.6666 10.6667 9.47268 10.6667 7.99992V3.99992C10.6667 2.52716 9.47276 1.33325 8 1.33325ZM4 6.83325C4.27614 6.83325 4.5 7.05711 4.5 7.33325V7.99992C4.5 9.93292 6.067 11.4999 8 11.4999C9.933 11.4999 11.5 9.93292 11.5 7.99992V7.33325C11.5 7.05711 11.7239 6.83325 12 6.83325C12.2761 6.83325 12.5 7.05711 12.5 7.33325V7.99992C12.5 10.3162 10.75 12.2237 8.5 12.4725V13.6666H10C10.2761 13.6666 10.5 13.8904 10.5 14.1666C10.5 14.4427 10.2761 14.6666 10 14.6666H6C5.72386 14.6666 5.5 14.4427 5.5 14.1666C5.5 13.8904 5.72386 13.6666 6 13.6666H7.5V12.4725C5.25002 12.2237 3.5 10.3162 3.5 7.99992V7.33325C3.5 7.05711 3.72386 6.83325 4 6.83325Z"
+                        fill="#4D8AE5"
+                      />
+                    </svg>
+                  </span>
+                  <p className="text-xs font-normal text-[#4D8AE5]">پادکست</p>
+                </div>
+                <Link href={""} className="flex items-center gap-2">
+                  <p className=" text-base font-normal text-grey-300 ">
+                    مشاهده همه
+                  </p>
+                  <span>
+                    <svg
+                      width="12"
+                      height="13"
+                      viewBox="0 0 12 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.785 9.91006C4.69 9.91006 4.595 9.87506 4.52 9.80006L1.485 6.76506C1.34 6.62006 1.34 6.38006 1.485 6.23506L4.52 3.20006C4.665 3.05506 4.905 3.05506 5.05 3.20006C5.195 3.34506 5.195 3.58506 5.05 3.73006L2.28 6.50006L5.05 9.27006C5.195 9.41506 5.195 9.65506 5.05 9.80006C4.98 9.87506 4.88 9.91006 4.785 9.91006Z"
+                        fill="#CED2D6"
+                      />
+                      <path
+                        d="M10.25 6.875H1.835C1.63 6.875 1.46 6.705 1.46 6.5C1.46 6.295 1.63 6.125 1.835 6.125H10.25C10.455 6.125 10.625 6.295 10.625 6.5C10.625 6.705 10.455 6.875 10.25 6.875Z"
+                        fill="#CED2D6"
+                      />
+                    </svg>
+                  </span>
+                </Link>
+              </div>
+
+              <div className="flex flex-col">
+                <p className=" line-clamp-1 pb-5 pt-5 text-right text-base font-bold text-gray-200">
+                  مزایا و معایب فریلنسری چیست؟
+                </p>
+                {/* <WaveformFooter /> */}
+              </div>
+            </div>
+          </div>
       </div>
       <div className="bg-grey-900 px-7 py-6 text-center text-xs text-white ">
         زندگی مثل کدنویسی هست هر چه ساده تر باشه ، بیشترین کارایی رو خواهد داشت

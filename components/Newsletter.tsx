@@ -15,17 +15,19 @@ const Newsletter = () => {
     console.log(data);
   };
   return (
-    <div className="w-[calc(100vh_-_20px] absolute left-0 right-0 top-0 -translate-y-1/2  mx-5 rounded-2xl bg-newsletter bg-cover bg-center bg-no-repeat">
-      <div className="flex flex-col md:flex-row items-center justify-center px-4 pt-5">
-        <p className="text-center text-2xl font-black text-white">
+    <div className=" w-[calc(100vh_-_20px] absolute left-0 right-0 top-0 -translate-y-1/2  mx-5 rounded-2xl bg-newsletter bg-cover bg-center bg-no-repeat">
+      <div className="flex flex-col md:flex-row items-center justify-center px-4 pt-5 md:py-6 lg:gap-10">
+     <div className="flex flex-row md:flex-col w-7/12 pr-48 md:items-start">
+        <p className="text-center text-2xl font-black text-white whitespace-nowrap">
           خبرنامه هفتگی برنامه نویسان
         </p>
-        <p className="pt-3 text-center text-sm font-medium text-white">
+        <p className="pt-3 text-center text-sm font-medium text-white whitespace-nowrap">
           با مشترک شدن در خبرنامه هفتگی از اخبار و رویداد های برنامه نویسی که
           شرکت میکنم میتونید مطلع بشین.
         </p>
+     </div>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="w-full pt-6">
+        <form onSubmit={handleSubmit(onSubmit)} className="w-full pt-6 md:w-4/12">
           <div className="flex w-full items-center  justify-center gap-2 rounded-full bg-white px-4 py-2 shadow-default transition-all duration-500">
             <input
               {...register("email", {
@@ -65,14 +67,15 @@ const Newsletter = () => {
           </div>
         </form>
 
-        <div className="flex h-auto w-full items-center justify-center pt-7">
+        <div className="flex h-auto w-fit items-center justify-center pt-7 md:absolute md:right-5 md:bottom-0 md:pt-0 ">
           <Image
             src={"/images/messageBox.svg"}
             loading="lazy"
-            width={160}
-            height={131}
-            className="object-cover"
+            width={194}
+            height={159}
+            className="object-cover lg:w-48 lg:h-40"
             alt="message box"
+
           />
         </div>
       </div>
