@@ -43,7 +43,7 @@ const Footer = () => {
   return (
     <footer className="relative mt-48 bg-footer bg-cover bg-center">
       <Newsletter />
-      <div className="container  grid  grid-flow-row-dense w-full grid-cols-12 pb-10 pt-60  gap-5">
+      <div className="container  grid  grid-flow-row-dense w-full grid-cols-12 pb-10 pt-72  gap-5">
        
           <div className=" col-span-full lg:col-span-6 xl:col-span-5">
             <div className="flex  flex-col pb-8">
@@ -163,7 +163,7 @@ const Footer = () => {
           </div>
 
           {/* quick access */}
-          <div className="col-span-full md:col-span-6 lg:col-span-3 xl:col-span-2">
+          <div className="col-span-full sm:col-span-6 lg:col-span-3 xl:col-span-2">
             <p className="pb-5 text-right text-lg font-semibold text-white">
               دسترسی سریع
             </p>
@@ -182,7 +182,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="flex flex-col gap-10 md:col-span-6 col-span-full lg:col-span-3  xl:col-span-2">
+          <div className="flex flex-col gap-10 sm:col-span-6 col-span-full lg:col-span-3  xl:col-span-2">
 
 
            {/* namad */}
@@ -446,9 +446,7 @@ const Footer = () => {
           </div>
       </div>
       <div className="bg-grey-900 px-7 py-6 text-center text-xs text-white ">
-        زندگی مثل کدنویسی هست هر چه ساده تر باشه ، بیشترین کارایی رو خواهد داشت
-        . پس بیایید کدهامون رو ساده و قابل فهم بنویسیم تا همه بتونن به کدهامون
-        لبخند بزنن و از نتایجشون لذت ببرن ❤️
+      تمامی حقوق مادی و معنوی محفوظ میباشد - ©{jalaliYear}
       </div>
     </footer>
   );

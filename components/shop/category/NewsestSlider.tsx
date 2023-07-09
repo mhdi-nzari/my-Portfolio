@@ -35,9 +35,12 @@ const NewestSlider = () => {
         className="py-20 md:pt-0"
         loop={true}
         breakpoints={{
+          0:{
+            slidesPerView: 1,
+          },
           576: {
             // width: 576,
-            slidesPerView: 2,
+            slidesPerView: 1,
           },
           768: {
             // width: 768,

@@ -18,17 +18,17 @@ const Newsletter = () => {
     <div className=" w-[calc(100vh_-_20px] absolute left-0 right-0 top-0 -translate-y-1/2  mx-5 rounded-2xl bg-newsletter bg-cover bg-center bg-no-repeat overflow-hidden md:overflow-visible">
       <div className="flex flex-col md:flex-row items-center justify-center px-4 pt-5 md:py-6 lg:gap-10">
      <div className="flex flex-col md:w-7/12 md:pr-48 md:items-start">
-        <p className="text-center text-2xl font-black text-white whitespace-nowrap">
+        <p className="text-center text-xl sm:text-2xl font-black text-white whitespace-nowrap">
           خبرنامه هفتگی برنامه نویسان
         </p>
-        <p className="pt-3 text-center text-sm font-medium text-white whitespace-nowrap">
+        <p className="pt-3 text-center text-base  sm:px-20 md:px-0 md:text-sm font-medium text-white md:whitespace-nowrap">
           با مشترک شدن در خبرنامه هفتگی از اخبار و رویداد های برنامه نویسی که
           شرکت میکنم میتونید مطلع بشین.
         </p>
      </div>
 
         <form onSubmit={handleSubmit(onSubmit)} className="w-full pt-6 md:w-4/12">
-          <div className="flex w-full items-center  justify-center gap-2 rounded-full bg-white px-4 py-2 shadow-default transition-all duration-500">
+          <div className="flex w-full flex-wrap items-center justify-center sm:justify-between gap-2 rounded-2xl  sm:rounded-full bg-white px-4 py-4 shadow-default transition-all duration-500">
             <input
               {...register("email", {
                 required: true,
@@ -44,7 +44,7 @@ const Newsletter = () => {
               btnType="submit"
               title="عضویت"
               containerStyles="bg-secondary w-fit hover:translate-y-0 hover:outline-secondary"
-              textStyles="text-white text-base font-normal"
+              textStyles="text-white text-base font-normal px-6 "
             />
           </div>
           <div className="px-5 pt-2">
