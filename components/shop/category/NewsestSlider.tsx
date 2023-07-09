@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import CategoryItem from "./CategoryItem";
+import { newsestproduct } from "@/constants";
 
 const NewestSlider = () => {
   const navigationNextRef = useRef(null);
@@ -35,7 +36,7 @@ const NewestSlider = () => {
         className="py-20 md:pt-0"
         loop={true}
         breakpoints={{
-          0:{
+          0: {
             slidesPerView: 1,
           },
           576: {
@@ -66,141 +67,24 @@ const NewestSlider = () => {
         onReachEnd={handleReachEnd}
         onSlideChange={handleSlideChange}
       >
-        <SwiperSlide>
+        {newsestproduct.map((item) => (
+          <SwiperSlide key={item.id}>
           <CategoryItem
-            title={"دوره متخصص ریکت و ریداکس"}
-            image={"/images/product.svg"}
-            student={68}
-            star={4.9}
-            isRecord={true}
-            courseTime={"۵۵:۴۵:۰۰"}
-            releasePlatform={"اسپات پلیر"}
-            epizodNumber={"۵۰۰ درس"}
-            price={"2,999,000"}
-            offer={"50%"}
-            priceOffer={"1,499,000"}
-            productLink={"/shop/id"}
-          />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CategoryItem
-            title={"دوره متخصص ریکت و ریداکس"}
-            image={"/images/product.svg"}
-            student={68}
-            star={4.9}
-            isRecord={true}
-            courseTime={"۵۵:۴۵:۰۰"}
-            releasePlatform={"اسپات پلیر"}
-            epizodNumber={"۵۰۰ درس"}
-            price={"2,999,000"}
-            offer={"50%"}
-            priceOffer={"1,499,000"}
-            productLink={"/shop/id"}
-          />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CategoryItem
-            title={"دوره متخصص ریکت و ریداکس"}
-            image={"/images/product.svg"}
-            student={68}
-            star={4.9}
-            isRecord={true}
-            courseTime={"۵۵:۴۵:۰۰"}
-            releasePlatform={"اسپات پلیر"}
-            epizodNumber={"۵۰۰ درس"}
-            price={"2,999,000"}
-            offer={"50%"}
-            priceOffer={"1,499,000"}
-            productLink={"/shop/id"}
-          />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CategoryItem
-            title={"دوره متخصص ریکت و ریداکس"}
-            image={"/images/product.svg"}
-            student={68}
-            star={4.9}
-            isRecord={true}
-            courseTime={"۵۵:۴۵:۰۰"}
-            releasePlatform={"اسپات پلیر"}
-            epizodNumber={"۵۰۰ درس"}
-            price={"2,999,000"}
-            offer={"50%"}
-            priceOffer={"1,499,000"}
-            productLink={"/shop/id"}
-          />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CategoryItem
-            title={"دوره متخصص ریکت و ریداکس"}
-            image={"/images/product.svg"}
-            student={68}
-            star={4.9}
-            isRecord={true}
-            courseTime={"۵۵:۴۵:۰۰"}
-            releasePlatform={"اسپات پلیر"}
-            epizodNumber={"۵۰۰ درس"}
-            price={"2,999,000"}
-            offer={"50%"}
-            priceOffer={"1,499,000"}
-            productLink={"/shop/id"}
-          />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CategoryItem
-            title={"دوره متخصص ریکت و ریداکس"}
-            image={"/images/product.svg"}
-            student={68}
-            star={4.9}
-            isRecord={true}
-            courseTime={"۵۵:۴۵:۰۰"}
-            releasePlatform={"اسپات پلیر"}
-            epizodNumber={"۵۰۰ درس"}
-            price={"2,999,000"}
-            offer={"50%"}
-            priceOffer={"1,499,000"}
-            productLink={"/shop/id"}
-          />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CategoryItem
-            title={"دوره متخصص ریکت و ریداکس"}
-            image={"/images/product.svg"}
-            student={68}
-            star={4.9}
-            isRecord={true}
-            courseTime={"۵۵:۴۵:۰۰"}
-            releasePlatform={"اسپات پلیر"}
-            epizodNumber={"۵۰۰ درس"}
-            price={"2,999,000"}
-            offer={"50%"}
-            priceOffer={"1,499,000"}
-            productLink={"/shop/id"}
-          />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CategoryItem
-            title={"دوره متخصص ریکت و ریداکس"}
-            image={"/images/product.svg"}
-            student={68}
-            star={4.9}
-            isRecord={true}
-            courseTime={"۵۵:۴۵:۰۰"}
-            releasePlatform={"اسپات پلیر"}
-            epizodNumber={"۵۰۰ درس"}
-            price={"2,999,000"}
-            offer={"50%"}
-            priceOffer={"1,499,000"}
-            productLink={"/shop/id"}
-          />
-        </SwiperSlide>
+              title={item.title}
+              image={item.image}
+              student={item.student}
+              star={item.star}
+              isRecord={item.isRecord}
+              courseTime={item.courseTime}
+              releasePlatform={item.releasePlatform}
+              epizodNumber={item.epizodNumber}
+              price={item.price}
+              offer={item.offer}
+              priceOffer={item.priceOffer}
+              productLink={item.productLink}
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
 
       <div className="flex w-full items-center justify-center gap-5 pt-10">

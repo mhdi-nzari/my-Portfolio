@@ -5,6 +5,7 @@ import "tailwindcss/tailwind.css";
 
 import localFont from "next/font/local";
 import Head from "next/head";
+import { CartProvider } from "@/context/CartContext";
 
 /* ---------------- Dana Fonts ---------------- */
 const dana = localFont({
@@ -70,9 +71,11 @@ export default function RootLayout({
       <body
         className={`oveflow-hidden relative mx-auto max-w-screen-2xl ${dana.variable} font-dana`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <CartProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </CartProvider>
       </body>
     </html>
   );

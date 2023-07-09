@@ -1,9 +1,10 @@
 import { navBarItem } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useRef } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { activeMenyProps } from "@/types";
+import { useCartContext } from "@/context/CartContext";
 const MobileMenu: React.FC<activeMenyProps> = ({
   activeMenu,
   setActiveMenu,
@@ -11,11 +12,10 @@ const MobileMenu: React.FC<activeMenyProps> = ({
   setMenuClicked,
 }: activeMenyProps) => {
   const pathname = usePathname();
-
+  const { cartQty } = useCartContext();
   let menuRef = useRef<HTMLDivElement | null>(null);
 
   const handleClickOutside = (event: MouseEvent | TouchEvent) => {
-   
     if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
       setActiveMenu(false);
     }
@@ -32,25 +32,25 @@ const MobileMenu: React.FC<activeMenyProps> = ({
         setMenuClicked(false);
       }
     };
-  
+
     document.addEventListener("click", handleClickOutside);
-  
+
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
-  }, [menuClicked, setActiveMenu, setMenuClicked]); 
+  }, [menuClicked, setActiveMenu, setMenuClicked]);
 
   return (
     <>
       <div
         ref={menuRef}
-        className={`absolute top-28 left-0 right-0 mx-auto w-[90%] h-[500px] p-10 bg-white shadow-sm rounded-[24px]  block lg:hidden  transition-all duration-500   ${
+        className={`absolute left-0 right-0 top-28 mx-auto block h-[500px] w-[90%] rounded-[24px] bg-white p-10  shadow-sm transition-all  duration-500 lg:hidden   ${
           activeMenu
-            ? "-translate-y-0 opacity-100 visible "
-            : "-translate-y-5 opacity-0 invisible"
+            ? "visible -translate-y-0 opacity-100 "
+            : "invisible -translate-y-5 opacity-0"
         }`}
       >
-        <nav className="w-full flex flex-col h-full">
+        <nav className="flex h-full w-full flex-col">
           <div className=" ">
             {navBarItem.shop.map((item, i) => (
               <Link
@@ -77,10 +77,10 @@ const MobileMenu: React.FC<activeMenyProps> = ({
                   </svg>
                 </span>
 
-                <span className="bg-basketGreen rounded-full flex justify-center items-center w-6 h-6 text-xs absolute -top-[0.75rem] -right-[0.7rem] text-white border-2 border-white">
-                  4
+                <span className="absolute -right-[0.7rem] -top-[0.75rem] flex h-6 w-6 items-center justify-center rounded-full border-2 border-white bg-basketGreen text-xs text-white">
+                 {cartQty}
                 </span>
-                <p className="text-16 text-gray-900 font-light pr-4">
+                <p className="pr-4 text-16 font-light text-gray-900">
                   {item.title}
                 </p>
               </Link>
@@ -93,17 +93,17 @@ const MobileMenu: React.FC<activeMenyProps> = ({
                 src="/images/Line_navbar.png"
                 loading="lazy"
                 alt="line"
-                className="w-full h-full"
+                className="h-full w-full"
               />
             </div>
           </div>
 
-          <div className="w-full h-full">
-            <ul className="w-full flex flex-col justify-between pb-5">
+          <div className="h-full w-full">
+            <ul className="flex w-full flex-col justify-between pb-5">
               {navBarItem.menu.map((item, i) => (
                 <li
                   key={i}
-                  className="w-full flex border-b last:border-0 border-gray-100 py-5 "
+                  className="flex w-full border-b border-gray-100 py-5 last:border-0 "
                 >
                   <div>
                     <Image
@@ -118,8 +118,8 @@ const MobileMenu: React.FC<activeMenyProps> = ({
                     href={item.url}
                     className={`pr-3 text-16 transition-all duration-300 ${
                       pathname === item.url
-                        ? "text-primary  font-semibold"
-                        : "text-[#757B8A] font-normal"
+                        ? "font-semibold  text-primary"
+                        : "font-normal text-[#757B8A]"
                     }`}
                   >
                     {item.title}

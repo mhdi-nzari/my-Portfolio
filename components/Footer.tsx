@@ -268,7 +268,7 @@ const Footer = () => {
             <p className="pb-5 text-right text-lg font-semibold text-white">
               شبکه های اجتماعی
             </p>
-            <ul className="flex w-full flex-wrap gap-3">
+            <ul className="flex w-full flex-wrap gap-1">
               {/* instagram */}
               <li className="rounded-xl border-2 border-transparent bg-[rgba(14,16,17,0.56)] p-2 transition-all duration-500 hover:-translate-y-2 hover:border-white hover:bg-primary">
                 <a href="">

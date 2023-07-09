@@ -28,7 +28,7 @@ const Newsletter = () => {
      </div>
 
         <form onSubmit={handleSubmit(onSubmit)} className="w-full pt-6 md:w-4/12">
-          <div className="flex w-full flex-wrap items-center justify-center sm:justify-between gap-2 rounded-2xl  sm:rounded-full bg-white px-4 py-4 shadow-default transition-all duration-500">
+          <div className="flex w-full  items-center justify-center sm:justify-between gap-2 rounded-2xl  sm:rounded-full bg-white pl-2 pr-4 py-2 shadow-default transition-all duration-500">
             <input
               {...register("email", {
                 required: true,
