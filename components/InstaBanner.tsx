@@ -4,9 +4,9 @@ import CustomButton from "./CustomButton";
 
 const InstaBanner = () => {
   return (
-    <section className=" container relative z-10 w-full overflow-hidden">
-      <div className="rounded-3xl bg-instagram_banner bg-cover bg-center px-3 pb-5 pt-20 md:py-6 flex flex-col md:flex-row items-center lg:justify-around">
-        <p className="inline-block font-light pb-4 md:pb-0 md:text-3xl text-center text-lg line-clamp-4 text-white whitespace-nowrap pr-60">
+    <section className=" container relative z-10 w-full ">
+      <div className="rounded-3xl bg-instagram_banner bg-cover bg-center px-3 pb-5 pt-20 md:py-6 flex flex-col md:flex-row items-center lg:justify-around overflow-hidden">
+        <p className="flex flex-wrap justify-center font-light pb-4 md:pb-0 md:text-3xl text-center text-lg line-clamp-4 text-white whitespace-nowrap md:pr-60">
           من هر روز کلی
           <a
             href="http://instagram.com/mhdi_nzari"

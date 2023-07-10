@@ -4,7 +4,7 @@ import React from "react";
 
 const PortfolioItem = () => {
   return (
-    <figure className="relative h-[400px] w-full rounded-2xl bg-portfolio_item bg-cover bg-center bg-no-repeat group">
+    <figure className="relative h-[400px] w-full rounded-2xl bg-portfolio_item bg-cover bg-center bg-no-repeat drop-shadow-item group">
       <figcaption className="absolute bottom-0 left-0   w-full   backdrop-blur-sm bg-white/50  rounded-ee-2xl rounded-es-2xl border-t ">
         <div className="w-full px-3 py-3 ">
           <div className="flex items-center justify-start gap-2">

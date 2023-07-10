@@ -53,8 +53,8 @@ const WaveformFooter = () => {
               <div className={`${waveformLoaded ? "visible" : "hidden"}`}></div>
             </>
           ) : (
-            <div className="flex items-center justify-center">
-              <p className="text-xs text-white">در  ... درحال بارگذاری</p>
+            <div className="flex items-center justify-start">
+              <p className="text-xs text-white text-right">در حال بارگذاری ...</p>
             </div>
           )}
         </div>

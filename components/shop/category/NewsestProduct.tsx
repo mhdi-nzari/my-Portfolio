@@ -24,8 +24,8 @@ const NewsestProduct = () => {
   };
 
   return (
-    <section className="container flex flex-col  bg-circle_empty bg-center bg-no-repeat lg:flex-row lg:justify-between">
-      <div className="flex  flex-col lg:w-3/12">
+    <section className="container flex flex-row  bg-circle_empty bg-center bg-no-repeat lg:flex-col lg:justify-between">
+      <div className="flex  flex-col ">
         {/* TitleBar and CustomButton components */}
         <TitleBar
           bgPattern="/images/icon/teacher.svg"
@@ -48,7 +48,7 @@ const NewsestProduct = () => {
           />
         </div>
       </div>
-      <div className=" w-full pb-16 md:pb-16 px-10 lg:w-8/12">
+      <div className=" w-full pb-16 md:pb-16 ">
         <NewestSlider />
       </div>
     </section>

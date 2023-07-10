@@ -37,7 +37,7 @@
 
     return (
       <>
-        <span className=" h-auto inline-block" style={{width:"100px"}} {...containerProps} ref={countUpRef}>
+        <span className=" h-auto inline-block" style={{width:"90px"}} {...containerProps} ref={countUpRef}>
           {startNum}
         </span>
       </>

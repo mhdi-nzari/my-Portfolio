@@ -3,6 +3,7 @@
 import React, { useRef, useState } from "react";
 import { Navigation, Autoplay } from "swiper/modules";
 
+// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -33,11 +34,12 @@ const NewestSlider = () => {
         spaceBetween={20}
         slidesPerView={1}
         centeredSlides={true}
-        className="py-20 md:pt-0"
+        className="sm:py-20 md:pt-0"
         loop={true}
         breakpoints={{
           0: {
             slidesPerView: 1,
+            spaceBetween: 50,
           },
           576: {
             // width: 576,

@@ -9,11 +9,10 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: "2rem",
-       sm:"2rem",
-       md:"3rem",
-       lg:"5rem"
-       
+        DEFAULT: "1rem",
+        sm: "2rem",
+        md: "3rem",
+        lg: "5rem",
       },
     },
     extend: {
@@ -41,6 +40,10 @@ module.exports = {
 
         basketGreen: "#2F9461",
       },
+      dropShadow: {
+        "item": "28px 15px 44px  rgba(38,44,156,0.08)",
+     
+      },
       fontSize: {
         12: "12px",
         14: "14px",
@@ -62,7 +65,7 @@ module.exports = {
         30: "30px",
         31: "31px",
         32: "32px",
-      34: "34px",
+        34: "34px",
         56: "56px",
         68: "68px",
       },
@@ -82,7 +85,5 @@ module.exports = {
     },
   },
 
-  plugins: [
-    require("@tailwindcss/aspect-ratio"),
-  ],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };

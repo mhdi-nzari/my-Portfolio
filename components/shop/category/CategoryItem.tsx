@@ -19,7 +19,7 @@ const CategoryItem = ({
   student,
 }: categoryItem) => {
   return (
-    <figure className="group relative flex  flex-col rounded-[20px] w-full lg:mx-auto bg-white p-4 drop-shadow-lg">
+    <figure className="group relative flex  flex-col rounded-[20px] w-full lg:mx-auto bg-white p-4 drop-shadow-item">
       <Link href={productLink} className="aspect-h-9 aspect-w-13">
         <Image
           src={image}
@@ -108,13 +108,13 @@ const CategoryItem = ({
 
         {/* product title */}
         <div className=" relative  mb-3 after:absolute after:-right-4 after:bottom-0 after:top-0 after:h-full after:w-[6px]  after:rounded-ee-full after:rounded-se-full after:bg-gray-300 after:transition-all after:duration-500 group-hover:after:bg-secondary ">
-          <h1 className="relative text-20 font-[950] leading-8 text-gray-700 transition-all duration-500 line-clamp-2 group-hover:pr-1 ">
+          <h1 className="relative text-16 sm:text-20 font-[950] leading-8 text-gray-700 transition-all duration-500 line-clamp-2 group-hover:pr-1 ">
             {title}
           </h1>
         </div>
 
         {/* detail product */}
-        <div className="flex w-full flex-wrap justify-between gap-y-2">
+        <div className="flex w-full flex-wrap justify-between gap-y-4">
           <div className="flex w-fit items-center gap-2 ">
             <span>
               <svg
@@ -205,7 +205,7 @@ const CategoryItem = ({
           <div className="flex-1 flex items-center">
             <CustomButton
               containerStyles="bg-secondary hover:!outline-secondary"
-              textStyles="text-white "
+              textStyles="text-white text-12 sm:text-16 "
               title="ثبت نام دوره"
               btnType="button"
             />

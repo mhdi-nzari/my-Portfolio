@@ -38,9 +38,9 @@ const CountDownTimer = () => {
   }, []);
 
   return (
-    <div className="flex w-full justify-center gap-1 md:w-fit">
+    <div className="w-full flex flex-wrap justify-center gap-4 sm:gap-2 sm:flex-row md:w-fit">
       {/* seconds */}
-      <div className="flex  flex-col items-center">
+      <div className="flex  flex-col items-center w-fit justify-center">
         <div
           className="mb-2  flex  items-center justify-center rounded-2xl p-4"
           style={{
@@ -50,7 +50,7 @@ const CountDownTimer = () => {
             height: "45px",
           }}
         >
-          <p className="flex items-center justify-center mx-4 my-3 text-2xl font-medium text-white">
+          <p className="mx-4 my-3 flex items-center justify-center text-2xl font-medium text-white">
             {seconds}
           </p>
         </div>
@@ -59,9 +59,11 @@ const CountDownTimer = () => {
       </div>
 
       {/* dot */}
-      <div className="flex items-start h-fit pt-2 px-2 justify-center text-white text-xl">:</div>
+      <div className=" hidden h-fit items-start justify-center px-2 pt-2 text-xl text-white sm:flex">
+        :
+      </div>
 
-      <div className="flex  flex-col items-center">
+      <div className="flex  flex-col items-center w-fit justify-center">
         <div
           className="mb-2  flex  items-center justify-center rounded-2xl p-4"
           style={{
@@ -71,7 +73,7 @@ const CountDownTimer = () => {
             height: "45px",
           }}
         >
-          <p className="flex items-center justify-center mx-4 py-3 text-2xl font-medium text-white">
+          <p className="mx-4 flex items-center justify-center py-3 text-2xl font-medium text-white">
             {minutes}
           </p>
         </div>
@@ -79,9 +81,11 @@ const CountDownTimer = () => {
       </div>
 
       {/* dot */}
-      <div className="flex items-start h-fit pt-2 px-2 justify-center text-white text-xl">:</div>
+      <div className=" hidden h-fit items-start justify-center px-2 pt-2 text-xl text-white sm:flex">
+        :
+      </div>
 
-      <div className="flex  flex-col items-center">
+      <div className="flex  flex-col items-center w-fit justify-center">
         <div
           className="mb-2  flex  items-center justify-center rounded-2xl p-4"
           style={{
@@ -91,18 +95,20 @@ const CountDownTimer = () => {
             height: "45px",
           }}
         >
-          <p className="flex items-center justify-center mx-4 py-3 text-2xl font-medium text-white">
+          <p className="mx-4 flex items-center justify-center py-3 text-2xl font-medium text-white">
             {hours}
           </p>
         </div>
         <p className="w-fit text-18 font-light text-white">ساعت</p>
       </div>
 
-  {/* dot */}
-  <div className="flex items-start h-fit pt-2 px-2 justify-center text-white text-xl">:</div>
+      {/* dot */}
+      <div className=" hidden h-fit items-start justify-center px-2 pt-2 text-xl text-white sm:flex">
+        :
+      </div>
 
       {/* hours */}
-      <div className="flex  flex-col items-center">
+      <div className="flex  flex-col items-center w-fit justify-center">
         <div
           className="mb-2  flex  items-center justify-center rounded-2xl p-4"
           style={{
@@ -112,7 +118,7 @@ const CountDownTimer = () => {
             height: "45px",
           }}
         >
-          <p className="flex items-center justify-center mx-4 py-3 text-2xl font-medium text-white">
+          <p className="mx-4 flex items-center justify-center py-3 text-2xl font-medium text-white">
             {days}
           </p>
         </div>

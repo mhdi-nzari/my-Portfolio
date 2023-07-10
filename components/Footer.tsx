@@ -440,7 +440,7 @@ const Footer = () => {
                 <p className=" line-clamp-1 pb-5 pt-5 text-right text-base font-bold text-gray-200">
                   مزایا و معایب فریلنسری چیست؟
                 </p>
-                {/* <WaveformFooter /> */}
+                <WaveformFooter />
               </div>
             </div>
           </div>

@@ -69,7 +69,7 @@ export default function RootLayout({
         meta:a
       </Head>
       <body
-        className={`oveflow-hidden relative mx-auto max-w-screen-2xl ${dana.variable} font-dana`}
+        className={`oveflow-x-hidden relative mx-auto max-w-screen-2xl ${dana.variable} font-dana`}
       >
         <CartProvider>
           <Navbar />
